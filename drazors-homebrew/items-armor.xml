@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Armor</name>
+		<update version="2.0.0">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-armor.xml" />
+		</update>
+	</info>
+
+	<!-- Leather (11 + Dex) +2 = 13 + Dex. Built like the DMG's Glamoured Studded Leather. -->
+	<element name="Black Knife Armor" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_BLACK_KNIFE_ARMOR">
+		<description>
+			<p><em>Armor (leather), rare (requires attunement)</em></p>
+			<p class="indent">You have a +2 bonus to AC while wearing this armor (13 + your Dexterity modifier).</p>
+			<p class="indent"><strong><em>Veiled Step.</em></strong> When you roll initiative and at the start of each of your turns, the next attack made against you before the start of your next turn has disadvantage.</p>
+			<p class="indent"><strong><em>Shadow Vanish (3/Long Rest).</em></strong> You can cast <em>invisibility</em> without expending a spell slot. You regain all expended uses when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_INVISIBILITY" />
+			</div>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>Veiled Step: when you roll initiative and at the start of each of your turns, the next attack against you before your next turn has disadvantage. Shadow Vanish: cast invisibility without a spell slot.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="leather">Armor</set>
+			<set name="armor">Leather</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<!-- Clothing, not armor: unarmored 10 + Dex, +1 from the vest. -->
+	<element name="Vest of Mastery" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_VEST_OF_MASTERY">
+		<description>
+			<p><em>Wondrous item (clothing), rare (requires attunement)</em></p>
+			<p class="indent">While you wear this vest and no armor, your AC is 11 + your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Adroit Weave.</em></strong> Your Dexterity score increases by 2, to a maximum of 22.</p>
+			<p class="indent"><strong><em>Master's Echo.</em></strong> Whenever an ally you are in combat with scores a critical hit, your next attack during your turn is a critical hit.</p>
+		</description>
+		<sheet>
+			<description>Master's Echo: when an ally in the fight scores a critical hit, your next attack on your turn is a critical hit.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">body</set>
+			<set name="type">Wondrous item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[armor:none]" />
+			<stat name="dexterity" value="2" />
+			<stat name="dexterity:max" value="2" />
+		</rules>
+	</element>
+</elements>

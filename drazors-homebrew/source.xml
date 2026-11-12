@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Source</name>
+		<update version="2.0.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/source.xml" />
+		</update>
+	</info>
+
+	<element name="Drazor's Homebrew Content" type="Source" source="Core" id="ID_SOURCE_DRAZORS_HOMEBREW_CONTENT">
+		<description>
+			<p>Homebrew content by Drazor.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DHC</set>
+			<set name="url"></set>
+			<set name="author" abbreviation="DHC">Drazor</set>
+			<set name="third-party">true</set>
+			<set name="release">20261111</set>
+		</setters>
+	</element>
+</elements>

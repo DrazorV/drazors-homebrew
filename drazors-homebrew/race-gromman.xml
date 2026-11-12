@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Gromman</name>
+		<update version="2.0.0">
+			<file name="race-gromman.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/race-gromman.xml" />
+		</update>
+	</info>
+
+	<element name="Gromman" type="Race" source="Drazor's Homebrew Content" id="ID_WOTC_AAG_RACE_GROMMAN">
+		<description>
+			<p>Grommans are humanoid creatures that resemble giant great apes. Their arms and shoulders are incredibly muscular, and a gromman's hands are enormous compared to other humanoids. Their feet have three toes on each and can be used to grab onto tree branches when climbing, providing extra balance, in turn allowing them to move faster. Most have chocolate brown skin and short rust-colored fur over the entirety of their bodies. The gromman homeworld is a dense forest world. Grommans climb with incredible speed and can leap from tree to tree with the same grace as if they were walking on the ground. Gromman ships are some of the tallest in the Astral Sea, with grommans crew moving up and down the giant masts that are a signature of their spelljammers. Gromman society is female-dominated, holding all of the positions of power in any governing body. Males are considered equals, but it was decided long ago they were not to be trusted with such responsibility. Lore tells of a time when the male gromman controlled all aspects of their society, leading their species to the brink of extinction with their foolish laws and petty political squabbles.</p>
+			<h4>GROMMAN TRAITS</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase. </em></strong> Your Strength score increases by 2, and your Dexterity score increases by 1 if you choose medium size. Alternatively, your Dexterity score increases by 2, and your Strength score increases by 1 if you choose small size.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Grommans live a short but eventful life with their elders reaching up to 65 years. The adulthood also comes earlier for them at the age of 12 years old.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Grommans are usually lawful since they trust their hierarchy and their leaders who saved them from the brink of extinction.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you select this race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Massive Mits.</em></strong> You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.</p>
+			<p class="indent"><strong><em>Landspeed.</em></strong> You can use your muscular arms to propel yourself forward when you run. If you are not holding anything in your hands, you can double your speed as if you had taken the Dash action.</p>
+			<p class="indent"><strong><em>Raw Strength.</em></strong> You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size (Gromman)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="speed:climb" value="speed" bonus="base"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Gromman)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Gromman)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Gromman)" supports="Standard||Exotic" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+						<grant type="Racial Trait" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_MASSIVE_MITS" />
+			<grant type="Racial Trait" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_LANDSPEED" />
+			<grant type="Racial Trait" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_RAW_STRENGTH" />
+		</rules>
+	</element>
+
+	<element name="Massive Mits" type="Racial Trait" source="Drazor's Homebrew Content" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_MASSIVE_MITS">
+		<description>
+			<p>You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.</p>
+		</description>
+		<sheet>
+			<description>You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.</description>
+		</sheet>
+	</element>
+
+	<element name="Landspeed" type="Racial Trait" source="Drazor's Homebrew Content" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_LANDSPEED">
+		<description>
+			<p>You can use your muscular arms to propel yourself forward when you run. If you are not holding anything in your hands, you can double your speed as if you had taken the Dash action.</p>
+		</description>
+		<sheet>
+			<description>You can use your muscular arms to propel yourself forward when you run. If you are not holding anything in your hands, you can double your speed as if you had taken the Dash action.</description>
+		</sheet>
+	</element>
+
+	<element name="Raw Strength" type="Racial Trait" source="Drazor's Homebrew Content" id="ID_WOTC_AAG_RACIAL_TRAIT_GROMMAN_RAW_STRENGTH">
+		<description>
+			<p>You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Athletics skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency, Natural Athlete" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+</elements>

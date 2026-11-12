@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Way of the Soul Sword</name>
+		<update version="2.0.0">
+			<file name="archetype-monk-soul-sword.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/archetype-monk-soul-sword.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Soul Sword" type="Archetype" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_WAY_OF_THE_SOUL_SWORD">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can channel your ki into a bladeless hilt to create a sword of searing light. Only you can wield your soul sword, and the blade disappears in the hands of another.</p>
+			<p>The soul sword is a versatile monk weapon with the light and finesse properties. It deals 1d4 force damage when wielded one-handed, or 1d6 two-handed. This damage increases as you gain levels in monk: 1d6 (1d8) at 5th level, 1d8 (1d10) at 11th level, and 1d10 (1d12) at 17th level.</p>
+			<p>Whenever a monk feature would allow you to make an unarmed strike, you can make an attack with your soul sword instead.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_ENERGY_DEFLECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_INTUITIVE_SWORDPLAY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SIEGE_WEAPON" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_FORCE_PULL" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_PSIONIC_TALENTS" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_BOOMERANG" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SEARING_BLADE" />
+		</description>
+		<sheet display="false">
+			<description>You’re basically a Jedi now.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_ENERGY_DEFLECTION" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_INTUITIVE_SWORDPLAY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SIEGE_WEAPON" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_FORCE_PULL" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_PSIONIC_TALENTS" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_BOOMERANG" level="11"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SEARING_BLADE" level="17"/>
+		</rules>
+	</element>
+	<element name="Energy Deflection" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_ENERGY_DEFLECTION">
+		<description>
+			<p>While wielding your soul sword, you can use the Deflect Missiles monk feature to deflect and redirect energy projectiles, such as from a laser pistol (DMG, p. 268), or a ranged spell attack that deals damage targeting only you. If you reduce a spell's damage to 0, you can reflect it back at the caster by spending 1 ki point and making a ranged spell attack using your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>You can use Deflect Missiles on energy projectiles or ranged spell attacks targeting you. If you reduce a spell's damage to 0 you can use 1 Ki point to reflect it back to the caster (Spell Attack Wisdom)</description>
+		</sheet>
+	</element>
+	<element name="Intuitive Swordplay" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_INTUITIVE_SWORDPLAY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You gain one of the following fighting styles of your choice:</p>
+			<h5 class="caption">Blind Fighting</h5>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<h5 class="caption">Interception</h5>
+			<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_BLIND_FIGHTING|ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_INTERCEPTION" />
+		</rules>
+	</element>
+	<element name="Siege Weapon" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SIEGE_WEAPON">
+		<description>
+			<p>Your soul sword deals double damage to objects and items.</p>
+		</description>
+		<sheet>
+			<description>Your soul sword deals double damage to objects and items.</description>
+		</sheet>
+	</element>
+	<element name="Force Pull" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_FORCE_PULL">
+		<description>
+			<p>When you choose this tradition at 3rd level, you learn the mage hand cantrip, and the hand is invisible when you cast it.</p>
+
+			<p>Starting at 6th level, the range of your mage hand is doubled.</p>
+
+			<p>Starting at 9th level, you can cast telekinesis using Wisdom as your spellcasting ability. You can't cast telekinesis this way again until you finish a long rest, unless you spend 5 ki points.</p>
+		</description>
+		<sheet>
+			<description>You gain Mage Hand(invisible) at level 3, Mage Hand(invisible, double range) at level 6, Telekinesis spell(Wisdom) once per long rest at level 9.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" />
+		</rules>
+	</element>
+	<element name="Psionic Talents" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_PSIONIC_TALENTS">
+		<description>
+			<p>At 6th level, you learn 4 of the following spells: detect thoughts, hold person, shield, suggestion, thunderwave, or witch bolt. Wisdom is the spell casting ability for your Psionic Talents.</p>
+			<p class="indent">To cast a spell you know, you must spend 1 ki point per level of the spell. When you do so, you cast the spell without material components.</p>
+			<p class="indent">You can spend additional ki points to cast spells from this feature at a higher level. Each additional ki point increases the spell's level by one. The maximum number of ki points you can spend on a spell is based on your level in monk according to the Psionics and Ki Points table.</p>
+		</description>
+		<sheet>
+			<description>To cast a spell you know, you must spend 1 ki point per level of the spell. When you do so, you cast the spell without material components.
+			You can spend additional ki points to cast spells from this feature at a higher level. Each additional ki point increases the spell's level by one. The maximum number of ki points you can spend on a spell is based on your level in monk according to the Psionics and Ki Points table.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Psionic Talents" supports="ID_PHB_SPELL_HOLD_PERSON|ID_PHB_SPELL_DETECT_THOUGHTS|ID_PHB_SPELL_SHIELD|ID_PHB_SPELL_SUGGESTION|ID_PHB_SPELL_THUNDERWAVE|ID_PHB_SPELL_WITCH_BOLT" number="4" level="6"/>
+		</rules>
+	</element>
+	<element name="Soul Sword Boomerang" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_BOOMERANG">
+		<description>
+			<p>At 11th level, you can hurl your soul sword at your enemies. As an action, you spend 2 ki points and choose a number of creatures up to your Wisdom modifier (minimum of one creature) that you can see within 60 feet of you. Each creature must succeed on a Dexterity saving throw or take force damage equal to one roll of your Martial Arts die + your proficiency bonus + your Wisdom modifier (minimum of 1). The sword then returns to your hand.</p>
+			<p class="indent">You can increase the damage of this feature by spending ki points. Each additional ki point increases the damage by one Martial Arts die. The maximum number of ki points (2 plus any additional points) you can spend on this feature is 5.</p></description>
+		<sheet>
+			<description>you can hurl your soul sword at your enemies. As an action, you spend 2 ki points and choose a number of creatures up to {{wisdom:modifier}} (minimum of one creature) that you can see within 60 feet of you. Each creature must succeed on a Dexterity saving throw or take force damage equal to one Martial Arts die + {{wisdom:modifier}} + {{proficiency}}. The sword then returns to your hand. Each additional ki point spent adds one Martial Arts die (5 ki points at most).</description>
+		</sheet>
+	</element>
+	<element name="Searing Blade" type="Archetype Feature" source="Drazor's Homebrew Content" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHESOULSWORD_SEARING_BLADE">
+		<description>
+			<p>When you reach 17th level, your soul sword becomes so powerful that it can more easily sever limbs. When you attack a creature with your soul sword and roll a 19 or 20, the creature takes additional damage equal to 1d12 + your Wisdom modifier, and you lop off one of its limbs, with the effect of such loss determined by the DM. If a creature has no limb to sever, you lop off a portion of its body instead.</p>
+			<p class="indent">A creature does not lose a limb if it has legendary actions, but it still takes the extra damage.</p>
+		</description>
+		<sheet>
+			<description>
+				When you attack a creature with your soul sword and roll a 19 or 20, the creature takes additional damage equal to 1d12 + {{wisdom:modifier}}, and you lop off one of its limbs.
+				A creature does not lose a limb if it has legendary actions, but it still takes the extra damage.
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Fighting Style Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_FIGHTING_STYLE" />
+</elements>

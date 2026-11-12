@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Drazor's Homebrew</name>
+		<description>Drazor's homebrew: Way of the Soul Sword monk, Gromman race, Eldritch Beam invocation, and magic items.</description>
+		<author url="https://github.com/DrazorV/drazors-homebrew">Drazor</author>
+		<update version="1.0.0">
+			<file name="drazors-homebrew.index" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/source.xml" />
+		<file name="archetype-monk-soul-sword.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/archetype-monk-soul-sword.xml" />
+		<file name="class-features.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/class-features.xml" />
+		<file name="race-gromman.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/race-gromman.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-armor.xml" />
+	</files>
+</index>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Weapons</name>
+		<update version="2.0.0">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
+		</update>
+	</info>
+
+	<!-- ===================== Fang of the Dragon of Statues ===================== -->
+	<!-- Ids keep the original FAND spelling so existing characters keep their picks. -->
+	<element name="Fang of the Dragon of Statues (Slumbering)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_SLUMBERING">
+		<description>
+			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
+			<p>Forged from the mighty scale of Iymrith, the ancient blue Dragon of Statues reigning over the desolate expanse of the desert Anauroch, this dagger holds unparalleled power.</p>
+			<p>Its core, a formidable eight-inch blade, bears a razor-sharp edge reminiscent of the dragon's own claws, its steel infused with an electric cobalt hue resonating with the dragon's presence. At its hilt, a meticulously crafted blue dragon's head emerges, an awe-inspiring symbol of the weapon's origins and the dominance of Iymrith.</p>
+			<p>The Fang was once the arcane focus of Amtar Rajul. Since his death it has passed to his brother, Umtar, and the slumbering dragon within has begun to answer to a new bearer.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger. "Your element" below refers to that choice.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction).</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Fang of the Dragon of Statues (Stirring)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_STIRRING">
+		<description>
+			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
+			<p>Sparks of cobalt lightning crawl along the blade, and the eyes of the dragon's head on the hilt begin to glow.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> You gain a +1 bonus to attack rolls and damage rolls you make with weapon attacks and spell attacks.</p>
+			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction). +1 to attack and damage rolls of weapon and spell attacks. Resistance to your element.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="melee:attack" value="1" />
+			<stat name="melee:damage" value="1" />
+			<stat name="ranged:attack" value="1" />
+			<stat name="ranged:damage" value="1" />
+			<stat name="spellcasting:attack" value="1" />
+			<select type="Class Feature" name="Fang of the Dragon of Statues, Element" supports="Fang Element" />
+		</rules>
+	</element>
+
+	<!-- Was "(Awakened)"; renamed to match the table's stage names. Id unchanged. -->
+	<element name="Fang of the Dragon of Statues (Wakened)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_AWAKENED">
+		<description>
+			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
+			<p>Iymrith's fury is fully awake. Storm light pours from the blade, and those who meet the eyes of the dragon's head feel the ancient wyrm looking back at them.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 2d6 damage of your element. This requires no reaction.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> You gain a +2 bonus to attack rolls and damage rolls you make with weapon attacks and spell attacks.</p>
+			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
+			<p class="indent"><strong><em>Ominous Presence (1/Long Rest).</em></strong> As a bonus action, you unleash the dragon's dread. Each creature of your choice within 60 feet of you that can see you must make a Wisdom saving throw against your spell save DC. On a failed save, a creature is frightened of you. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can't use this property again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 2d6 damage of your element (no reaction). +2 to attack and damage rolls of weapon and spell attacks. Resistance to your element. Ominous Presence (bonus action, 1/long rest): creatures of your choice within 60 ft. that can see you make a Wisdom save vs. your spell save DC or are frightened of you (repeat the save at the end of each of their turns).</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="melee:attack" value="2" />
+			<stat name="melee:damage" value="2" />
+			<stat name="ranged:attack" value="2" />
+			<stat name="ranged:damage" value="2" />
+			<stat name="spellcasting:attack" value="2" />
+			<select type="Class Feature" name="Fang of the Dragon of Statues, Element" supports="Fang Element" />
+		</rules>
+	</element>
+
+	<!-- Element choices for the Stirring and Wakened stages. -->
+	<element name="Fang Element: Acid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_ACID">
+		<supports>Fang Element</supports>
+		<description>
+			<p>The Fang of the Dragon of Statues channels acid. Dragon's Revenge deals acid damage, and you have resistance to acid damage.</p>
+		</description>
+		<sheet>
+			<description>Your Fang element is acid: Dragon's Revenge deals acid damage; you resist acid damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+
+	<element name="Fang Element: Cold" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_COLD">
+		<supports>Fang Element</supports>
+		<description>
+			<p>The Fang of the Dragon of Statues channels cold. Dragon's Revenge deals cold damage, and you have resistance to cold damage.</p>
+		</description>
+		<sheet>
+			<description>Your Fang element is cold: Dragon's Revenge deals cold damage; you resist cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Fang Element: Fire" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_FIRE">
+		<supports>Fang Element</supports>
+		<description>
+			<p>The Fang of the Dragon of Statues channels fire. Dragon's Revenge deals fire damage, and you have resistance to fire damage.</p>
+		</description>
+		<sheet>
+			<description>Your Fang element is fire: Dragon's Revenge deals fire damage; you resist fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Fang Element: Lightning" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_LIGHTNING">
+		<supports>Fang Element</supports>
+		<description>
+			<p>The Fang of the Dragon of Statues channels lightning. Dragon's Revenge deals lightning damage, and you have resistance to lightning damage.</p>
+		</description>
+		<sheet>
+			<description>Your Fang element is lightning: Dragon's Revenge deals lightning damage; you resist lightning damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="Fang Element: Thunder" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_THUNDER">
+		<supports>Fang Element</supports>
+		<description>
+			<p>The Fang of the Dragon of Statues channels thunder. Dragon's Revenge deals thunder damage, and you have resistance to thunder damage.</p>
+		</description>
+		<sheet>
+			<description>Your Fang element is thunder: Dragon's Revenge deals thunder damage; you resist thunder damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<!-- ===================== Fatestealer ===================== -->
+	<element name="Fatestealer" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FATESTEALER_DRAZOR">
+		<description>
+			<p><em>Weapon (shortsword), very rare (requires attunement)</em></p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent">A creature attuned to the sword gains the following property while the sword is on its person.</p>
+			<p class="indent"><strong><em>Preserve Fate.</em></strong> The sword has a large gem on the hilt that can store a moment of fate for later use. Whenever you make an ability check, or an attack roll or saving throw against an evil creature, you can preserve that roll in the sword and roll again. The preserved fate recolors the gem: red for an attack roll, green for a saving throw, blue for an ability check. The preserved roll stays in the sword until you use a free action to replace a roll you just made with it, provided the roll is of the type that matches the gem's color.</p>
+			<p class="indent">The sword can hold only one preserved fate at a time.</p>
+			<p class="indent">The hilt, which is sentient, knows that it can never be reunited with its original crystal blade. It has, however, gained the properties of a <em>sun blade</em>.</p>
+		</description>
+		<sheet>
+			<description>Preserve Fate. When you make an ability check, or an attack roll or saving throw against an evil creature, you can store the roll in the gem and reroll. Later, as a free action, replace a roll of the matching type (red attack, green save, blue check) with the stored one. One stored fate at a time.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shortsword</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Klauth's Scalerender Glaive ===================== -->
+	<element name="Klauth's Scalerender Glaive (Slumbering)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_SLUMBERING">
+		<description>
+			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
+			<p>Forged from scaled iron said to be quenched in the embers of Klauth, this glaive hums with a slow, volcanic pulse. Charred leather binds the haft; the black-red blade glitters like cooled magma.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong></p>
+			<p class="indent"><strong><em>Draconic Resolve.</em></strong> While attuned, you have advantage on saving throws against being frightened.</p>
+			<p class="indent"><strong><em>Deflective Scales (1/Short Rest).</em></strong> When you are hit by an attack, you can reduce the damage by an amount equal to your proficiency bonus.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Advantage on saves against being frightened. Deflective Scales: when hit by an attack, reduce the damage by {{proficiency}}.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Glaive</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Klauth's Scalerender Glaive (Stirring)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_STIRRING">
+		<description>
+			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
+			<p>The glaive's glow brightens, sparks of draconic power licking along the edge.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong> You gain a +1 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent"><strong><em>Draconic Resolve.</em></strong> You have advantage on saving throws against being frightened.</p>
+			<p class="indent"><strong><em>Deflective Scales (1/Short Rest).</em></strong> When you are hit by an attack, you can reduce the damage by an amount equal to your proficiency bonus.</p>
+			<p class="indent"><strong><em>Draconic Surge.</em></strong> On a critical hit, the glaive erupts with draconic energy, dealing an extra 1d10 damage of the weapon's type.</p>
+			<p class="indent"><strong><em>Dragon's Guidance (1/Long Rest).</em></strong> After you roll but before the result is known, add a d4 to an attack roll, saving throw, or ability check.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Advantage on saves against being frightened. Deflective Scales (1/short rest): when hit, reduce the damage by {{proficiency}}. Crits deal +1d10 weapon damage. Dragon's Guidance (1/long rest): add a d4 to an attack roll, save or check.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Glaive</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+	<element name="Klauth's Scalerender Glaive (Wakened)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_WAKENED">
+		<description>
+			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
+			<p>A roaring heat fills the blade; dragon spirits whirl within its edge.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong> You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent"><strong><em>Critical Strike.</em></strong> Your attack rolls with this weapon score a critical hit on a roll of 19 or 20.</p>
+			<p class="indent"><strong><em>Scaled Martyr (Reaction, 1/Long Rest).</em></strong> When a creature you can see within 50 feet of you is hit by an attack, you can plunge the glaive into the ground and call draconic spirits to divert the blow. The creature takes no damage and instead regains hit points equal to the prevented damage, and you take force damage equal to the damage it would have taken. This fails if the original attack would have instantly killed the creature.</p>
+			<p class="indent"><strong><em>Draconic Resolve.</em></strong> You have advantage on saving throws against being frightened.</p>
+			<p class="indent"><strong><em>Deflective Scales (1/Short Rest).</em></strong> When you are hit by an attack, you can reduce the damage by an amount equal to your proficiency bonus.</p>
+			<p class="indent"><strong><em>Draconic Surge.</em></strong> On a critical hit, the glaive deals an extra 1d10 damage of its type.</p>
+			<p class="indent"><strong><em>Dragon's Guidance (1/Long Rest).</em></strong> After you roll but before the result is known, add a d4 to one attack roll, saving throw, or ability check.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Crit on 19-20; crits deal +1d10 weapon damage. Scaled Martyr (reaction, 1/long rest): an ally within 50 ft. that is hit takes no damage and heals that much; you take it as force damage. Advantage on saves against being frightened. Deflective Scales (1/short rest): reduce damage by {{proficiency}}. Dragon's Guidance (1/long rest): add a d4.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Glaive</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+</elements>
