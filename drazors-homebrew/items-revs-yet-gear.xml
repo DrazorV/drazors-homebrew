@@ -2,18 +2,10 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: YET Gear</name>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="items-revs-yet-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-yet-gear.xml" />
 		</update>
 	</info>
-
-	<!-- Firearm rules shared by the YET firearms. -->
-	<element name="YET Firearm Rules" type="Information" source="Rev's Homebrew" id="ID_REV_YET_INFORMATION_FIREARMS">
-		<description>
-			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
-			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
-		</description>
-	</element>
 
 	<!-- ===================== Hexfire Pistol ===================== -->
 	<!-- Base weapon, so the magic pistol below gets the right damage and range. -->
@@ -21,10 +13,12 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p>Firearm, light, one-handed. Range 60/180 ft. Reload 6, Misfire 2.</p>
-			<div class="reference">
-				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
-			</div>
+			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
+			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
 		</description>
+		<sheet>
+			<description>Reload 6, Misfire 2. Reload: after the Reload number of shots, spend 1 attack or 1 action (one free hand) to reload. Misfire: if the die shows the Misfire score or lower, the attack misses and the gun jams; spend an action and pass a Tinker's Tools check (DC 8 + Misfire) to fix it, or it breaks (mend out of combat for 1/4 of its cost). Not proficient: Misfire +1.</description>
+		</sheet>
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
@@ -41,12 +35,11 @@
 			<p><em>Weapon (firearm), rare</em></p>
 			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon. It is a light, one-handed firearm with a range of 60/180 feet that deals 1d8 force damage. Reload 6, Misfire 2.</p>
 			<p class="indent"><strong><em>Suppressive Shot.</em></strong> The pistol has 4 charges. Once per turn, when you hit a target with it, you can expend 1 charge before rolling damage. The target must succeed on a DC 16 Strength saving throw or fall prone. The pistol regains all expended charges daily at dawn.</p>
-			<div class="reference">
-				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
-			</div>
+			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
+			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
 		</description>
 		<sheet usage="4 Charges">
-			<description>Reload 6, Misfire 2. Suppressive Shot: once per turn on a hit, before damage, the target makes a DC 16 Str save or falls prone. Regains charges at dawn.</description>
+			<description>Reload 6, Misfire 2. Suppressive Shot: once per turn on a hit, before damage, the target makes a DC 16 Str save or falls prone. Regains charges at dawn. Reload: after the Reload number of shots, spend 1 attack or 1 action (one free hand) to reload. Misfire: if the die shows the Misfire score or lower, the attack misses and the gun jams; spend an action and pass a Tinker's Tools check (DC 8 + Misfire) to fix it, or it breaks (mend out of combat for 1/4 of its cost). Not proficient: Misfire +1.</description>
 		</sheet>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -66,12 +59,11 @@
 		<description>
 			<p>Hextech firearm, two-handed. Range 120 ft. Reload 4, Misfire 2.</p>
 			<p class="indent"><strong><em>Overcharge.</em></strong> Before you attack, you can overcharge the shot. Its Misfire score becomes 10, and on a hit the target must succeed on a DC 16 Constitution saving throw or be silenced until the end of its next turn.</p>
-			<div class="reference">
-				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
-			</div>
+			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
+			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
 		</description>
 		<sheet>
-			<description>Reload 4, Misfire 2. Overcharge: Misfire becomes 10; on a hit, DC 16 Con save or silenced until the end of its next turn.</description>
+			<description>Reload 4, Misfire 2. Overcharge: Misfire becomes 10; on a hit, DC 16 Con save or silenced until the end of its next turn. Reload: after the Reload number of shots, spend 1 attack or 1 action (one free hand) to reload. Misfire: if the die shows the Misfire score or lower, the attack misses and the gun jams; spend an action and pass a Tinker's Tools check (DC 8 + Misfire) to fix it, or it breaks (mend out of combat for 1/4 of its cost). Not proficient: Misfire +1.</description>
 		</sheet>
 		<setters>
 			<set name="category">Weapons</set>
@@ -90,12 +82,11 @@
 		<description>
 			<p>Firearm, two-handed. Range 600 ft. Reload 1, Misfire 4.</p>
 			<p class="indent"><strong><em>Silenced.</em></strong> Attacking with this weapon doesn't end your invisibility.</p>
-			<div class="reference">
-				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
-			</div>
+			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
+			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
 		</description>
 		<sheet>
-			<description>Reload 1, Misfire 4. Attacking with it doesn't end your invisibility.</description>
+			<description>Reload 1, Misfire 4. Attacking with it doesn't end your invisibility. Reload: after the Reload number of shots, spend 1 attack or 1 action (one free hand) to reload. Misfire: if the die shows the Misfire score or lower, the attack misses and the gun jams; spend an action and pass a Tinker's Tools check (DC 8 + Misfire) to fix it, or it breaks (mend out of combat for 1/4 of its cost). Not proficient: Misfire +1.</description>
 		</sheet>
 		<setters>
 			<set name="category">Weapons</set>
