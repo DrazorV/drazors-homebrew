@@ -4,7 +4,7 @@
 		<name>Drazor's Homebrew</name>
 		<description>Drazor's homebrew: Way of the Soul Sword monk, Gromman race, Eldritch Beam invocation, spells, and magic items.</description>
 		<author url="https://github.com/DrazorV/drazors-homebrew">Drazor</author>
-		<update version="1.2.0">
+		<update version="1.3.0">
 			<file name="drazors-homebrew.index" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew.index" />
 		</update>
 	</info>

@@ -6,7 +6,7 @@ Homebrew content for Aurora and Borealis (D&D 5e, 2014 rules):
 - **Gromman** — race
 - **Eldritch Beam** — Eldritch Invocation
 - **Spells** — Wildshard's Macabre Projection, Dethrone (by Rev, listed under the "Rev's Homebrew" source)
-- Magic weapons and armor
+- Magic weapons and armor (the Fang of the Dragon of Statues dagger is by Rev, under the "Rev's Homebrew" source)
 
 ## Install
 

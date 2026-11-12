@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Weapons</name>
-		<update version="2.0.0">
+		<update version="2.1.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
 		</update>
 	</info>
 
 	<!-- ===================== Fang of the Dragon of Statues ===================== -->
 	<!-- Ids keep the original FAND spelling so existing characters keep their picks. -->
-	<element name="Fang of the Dragon of Statues (Slumbering)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_SLUMBERING">
+	<element name="Fang of the Dragon of Statues (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_SLUMBERING">
 		<description>
 			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
 			<p>Forged from the mighty scale of Iymrith, the ancient blue Dragon of Statues reigning over the desolate expanse of the desert Anauroch, this dagger holds unparalleled power.</p>
@@ -36,7 +36,7 @@
 		</setters>
 	</element>
 
-	<element name="Fang of the Dragon of Statues (Stirring)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_STIRRING">
+	<element name="Fang of the Dragon of Statues (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_STIRRING">
 		<description>
 			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
 			<p>Sparks of cobalt lightning crawl along the blade, and the eyes of the dragon's head on the hilt begin to glow.</p>
@@ -72,7 +72,7 @@
 	</element>
 
 	<!-- Was "(Awakened)"; renamed to match the table's stage names. Id unchanged. -->
-	<element name="Fang of the Dragon of Statues (Wakened)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_AWAKENED">
+	<element name="Fang of the Dragon of Statues (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_AWAKENED">
 		<description>
 			<p><em>Weapon (dagger), legendary (requires attunement)</em></p>
 			<p>Iymrith's fury is fully awake. Storm light pours from the blade, and those who meet the eyes of the dragon's head feel the ancient wyrm looking back at them.</p>
@@ -109,7 +109,7 @@
 	</element>
 
 	<!-- Element choices for the Stirring and Wakened stages. -->
-	<element name="Fang Element: Acid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_ACID">
+	<element name="Fang Element: Acid" type="Class Feature" source="Rev's Homebrew" id="ID_DRAZ_FANG_ELEMENT_ACID">
 		<supports>Fang Element</supports>
 		<description>
 			<p>The Fang of the Dragon of Statues channels acid. Dragon's Revenge deals acid damage, and you have resistance to acid damage.</p>
@@ -122,7 +122,7 @@
 		</rules>
 	</element>
 
-	<element name="Fang Element: Cold" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_COLD">
+	<element name="Fang Element: Cold" type="Class Feature" source="Rev's Homebrew" id="ID_DRAZ_FANG_ELEMENT_COLD">
 		<supports>Fang Element</supports>
 		<description>
 			<p>The Fang of the Dragon of Statues channels cold. Dragon's Revenge deals cold damage, and you have resistance to cold damage.</p>
@@ -135,7 +135,7 @@
 		</rules>
 	</element>
 
-	<element name="Fang Element: Fire" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_FIRE">
+	<element name="Fang Element: Fire" type="Class Feature" source="Rev's Homebrew" id="ID_DRAZ_FANG_ELEMENT_FIRE">
 		<supports>Fang Element</supports>
 		<description>
 			<p>The Fang of the Dragon of Statues channels fire. Dragon's Revenge deals fire damage, and you have resistance to fire damage.</p>
@@ -148,7 +148,7 @@
 		</rules>
 	</element>
 
-	<element name="Fang Element: Lightning" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_LIGHTNING">
+	<element name="Fang Element: Lightning" type="Class Feature" source="Rev's Homebrew" id="ID_DRAZ_FANG_ELEMENT_LIGHTNING">
 		<supports>Fang Element</supports>
 		<description>
 			<p>The Fang of the Dragon of Statues channels lightning. Dragon's Revenge deals lightning damage, and you have resistance to lightning damage.</p>
@@ -161,7 +161,7 @@
 		</rules>
 	</element>
 
-	<element name="Fang Element: Thunder" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_FANG_ELEMENT_THUNDER">
+	<element name="Fang Element: Thunder" type="Class Feature" source="Rev's Homebrew" id="ID_DRAZ_FANG_ELEMENT_THUNDER">
 		<supports>Fang Element</supports>
 		<description>
 			<p>The Fang of the Dragon of Statues channels thunder. Dragon's Revenge deals thunder damage, and you have resistance to thunder damage.</p>
