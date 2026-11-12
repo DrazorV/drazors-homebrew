@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Spells</name>
+		<update version="2.0.0">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/spells.xml" />
+		</update>
+	</info>
+
+	<!-- Spells from Rev's Homebrew, converted from 5etools JSON. -->
+
+	<element name="Wildshard's Macabre Projection" type="Spell" source="Drazor's Homebrew Content" id="ID_DHC_SPELL_WILDSHARDS_MACABRE_PROJECTION">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You tear open a rift in space-time, and a sensor appears within it that projects a creature's deepest fears. Choose a creature you can see within range. Undead and constructs are unaffected by this spell.</p>
+			<p class="indent">The target must make a Wisdom saving throw. On a failed save, it takes 5d8 psychic damage and is frightened for the duration. On a successful save, it takes half as much damage, isn't frightened, and the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic, chronurgy</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken piece of glass and sand</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Dethrone" type="Spell" source="Drazor's Homebrew Content" id="ID_DHC_SPELL_DETHRONE">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You use dark magic to reap the life force of your enemy. Choose a creature you can see within range. The target must make a Constitution saving throw. It takes 10d6 + 20 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> Casting this spell using a higher-level spell slot grants no additional benefit.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">1 Inspiration point</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- Oathbreaker paladins always have Dethrone prepared from 17th level (their first 5th-level slot). -->
+	<append id="ID_DMG_ARCHETYPE_FEATURE_OATHBREAKER_OATHBREAKER_SPELLS">
+		<rules>
+			<grant type="Spell" id="ID_DHC_SPELL_DETHRONE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</append>
+</elements>
