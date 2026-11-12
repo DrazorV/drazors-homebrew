@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Source</name>
-		<update version="2.0.0">
+		<update version="2.1.0">
 			<file name="source.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/source.xml" />
 		</update>
 	</info>
@@ -17,6 +17,19 @@
 			<set name="author" abbreviation="DHC">Drazor</set>
 			<set name="third-party">true</set>
 			<set name="release">20261111</set>
+		</setters>
+	</element>
+
+	<element name="Rev's Homebrew" type="Source" source="Core" id="ID_SOURCE_REVS_HOMEBREW">
+		<description>
+			<p>Homebrew content by Rev.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RH</set>
+			<set name="url"></set>
+			<set name="author" abbreviation="RH">Rev</set>
+			<set name="third-party">true</set>
+			<set name="release">20261112</set>
 		</setters>
 	</element>
 </elements>

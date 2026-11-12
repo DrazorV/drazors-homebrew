@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Spells</name>
-		<update version="2.0.0">
+		<update version="2.1.0">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/spells.xml" />
 		</update>
 	</info>
 
-	<!-- Spells from Rev's Homebrew, converted from 5etools JSON. -->
+	<!-- Spells by Rev (source: Rev's Homebrew), converted from 5etools JSON. Ids keep the DHC prefix. -->
 
-	<element name="Wildshard's Macabre Projection" type="Spell" source="Drazor's Homebrew Content" id="ID_DHC_SPELL_WILDSHARDS_MACABRE_PROJECTION">
+	<element name="Wildshard's Macabre Projection" type="Spell" source="Rev's Homebrew" id="ID_DHC_SPELL_WILDSHARDS_MACABRE_PROJECTION">
 		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You tear open a rift in space-time, and a sensor appears within it that projects a creature's deepest fears. Choose a creature you can see within range. Undead and constructs are unaffected by this spell.</p>
@@ -32,7 +32,7 @@
 		</setters>
 	</element>
 
-	<element name="Dethrone" type="Spell" source="Drazor's Homebrew Content" id="ID_DHC_SPELL_DETHRONE">
+	<element name="Dethrone" type="Spell" source="Rev's Homebrew" id="ID_DHC_SPELL_DETHRONE">
 		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You use dark magic to reap the life force of your enemy. Choose a creature you can see within range. The target must make a Constitution saving throw. It takes 10d6 + 20 necrotic damage on a failed save, or half as much damage on a successful one.</p>

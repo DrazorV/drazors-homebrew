@@ -5,7 +5,7 @@ Homebrew content for Aurora and Borealis (D&D 5e, 2014 rules):
 - **Way of the Soul Sword** — Monk tradition
 - **Gromman** — race
 - **Eldritch Beam** — Eldritch Invocation
-- **Spells** — Wildshard's Macabre Projection, Dethrone (from Rev's Homebrew)
+- **Spells** — Wildshard's Macabre Projection, Dethrone (by Rev, listed under the "Rev's Homebrew" source)
 - Magic weapons and armor
 
 ## Install
