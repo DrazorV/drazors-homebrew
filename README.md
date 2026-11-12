@@ -7,6 +7,10 @@ Homebrew content for Aurora and Borealis (D&D 5e, 2014 rules):
 - **Eldritch Beam** — Eldritch Invocation (by Rev)
 - **Spells** — Wildshard's Macabre Projection, Dethrone (by Rev, listed under the "Rev's Homebrew" source)
 - Magic weapons (all by Rev: Fang of the Dragon of Statues, Fatestealer, Klauth's Scalerender Glaive) and armor
+- More items by Rev:
+  - Dragon hoard items with Slumbering/Stirring/Wakened stages: Greatsword of the Black Doom, Klauth's Staff of Brimstone, Lost Secrets of Icingdeath, Venom's Gilded Jewels
+  - Blooddrinker Axe; Sarialax, Bow of the Dranorri Rangers; Vampiric Draught
+  - YET gear: Hexfire Pistol, Magelock Rifle, Silenced Sniper, Tactical Baton, Hex Grenade, Smokecharge Grenade
 
 ## Install
 
