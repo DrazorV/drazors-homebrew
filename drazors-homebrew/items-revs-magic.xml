@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rev's Homebrew: Magic Items</name>
+		<update version="1.0.0">
+			<file name="items-revs-magic.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-magic.xml" />
+		</update>
+	</info>
+
+	<!-- ===================== Blooddrinker Axe ===================== -->
+	<element name="Blooddrinker Axe" type="Magic Item" source="Rev's Homebrew" id="ID_REV_BLOODDRINKER_AXE">
+		<description>
+			<p><em>Weapon (greataxe), very rare (requires attunement)</em></p>
+			<p>The axe belonged to the Conqueror, the desecrated, risen form of King Azoun IV. With it in hand he slaughtered the soldiers of Castle Crag and delivered what was once the strongest fortress of the North to Thauglor. He left the axe buried in the body of the Baron of the North, who died in the attack, pinning the corpse in place so the dark lord could raise and question it as an undead.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent"><strong><em>Versatile.</em></strong> While you are attuned to the axe, it has the versatile property: you can wield it in one hand, dealing 1d10 slashing damage.</p>
+			<p class="indent"><strong><em>Bloodbath Critical.</em></strong> When you roll a 20 on an attack roll with this weapon, the target's life force flows into you, and you regain hit points equal to the total damage the attack dealt. This has no effect on constructs and plants.</p>
+			<p class="indent"><strong><em>Blood Sacrifice (3/Day).</em></strong> As a bonus action, you cut yourself and let the axe drink your blood. You take 3d6 necrotic damage, and the next time you hit with the axe within 10 minutes, the attack deals an extra 3d6 force damage. Neither damage can be resisted or reduced. The axe regains all expended uses at midnight.</p>
+		</description>
+		<sheet usage="3/Day" action="Bonus Action">
+			<description>Versatile (1d10 one-handed). Bloodbath Critical: on a natural 20, regain HP equal to the attack's damage (not constructs or plants). Blood Sacrifice: take 3d6 necrotic; your next hit within 10 minutes deals +3d6 force. Neither can be resisted. Recharges at midnight.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="type" addition="greataxe">Weapon</set>
+			<set name="weapon">Greataxe</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Sarialax ===================== -->
+	<element name="Sarialax, Bow of the Dranorri Rangers" type="Magic Item" source="Rev's Homebrew" id="ID_REV_SARIALAX">
+		<description>
+			<p><em>Weapon (longbow), rare</em></p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon. Sarialax deals 2d8 piercing damage on a hit instead of the longbow's normal damage.</p>
+			<p class="indent"><strong><em>Arcane Focus.</em></strong> You can use the bow as an arcane focus.</p>
+			<p class="indent"><strong><em>Conjured Arrows.</em></strong> The bow needs no ammunition. A magical arrow appears in your hand each time you draw the string, and it vanishes 1 minute later.</p>
+		</description>
+		<sheet>
+			<description>Deals 2d8 piercing damage. Arcane focus. Needs no ammunition: arrows appear when you draw and vanish after 1 minute.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Vampiric Draught ===================== -->
+	<element name="Vampiric Draught" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VAMPIRIC_DRAUGHT">
+		<description>
+			<p><em>Potion, very rare</em></p>
+			<p>A vial of alchemically treated vampire blood. When you drink it, you gain the following benefits for 1 hour.</p>
+			<ul>
+				<li><strong>Regeneration.</strong> At the start of each of your turns, you regain 2d10 hit points if you have at least 1 hit point. If you start your turn in sunlight or running water, you instead take 2d10 radiant damage, whatever your hit points.</li>
+				<li><strong>Spider Climb.</strong> You can climb vertical surfaces and move upside down along ceilings with your hands free, and you have a climbing speed equal to your walking speed.</li>
+				<li><strong>Mist Step.</strong> As a bonus action, you can cast <em>misty step</em> without expending a spell slot. You can do so up to three times during the potion's duration.</li>
+			</ul>
+			<p>When the duration ends, you vomit up the now-nonmagical blood and must make a DC 20 Constitution saving throw. On a failure, you gain one level of exhaustion, and for the next 24 hours you count as undead for any effect that targets or affects undead, such as <em>protection from evil and good</em>.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MISTY_STEP" />
+			</div>
+		</description>
+		<sheet>
+			<description>For 1 hour: regain 2d10 HP at the start of each turn (2d10 radiant instead in sunlight or running water); climb speed equal to walking speed, spider climb; misty step 3 times as a bonus action. Afterward, DC 20 Con save or 1 exhaustion and count as undead for 24 hours.</description>
+		</sheet>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>

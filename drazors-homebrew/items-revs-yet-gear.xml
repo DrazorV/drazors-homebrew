@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rev's Homebrew: YET Gear</name>
+		<update version="1.0.0">
+			<file name="items-revs-yet-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-yet-gear.xml" />
+		</update>
+	</info>
+
+	<!-- Firearm rules shared by the YET firearms. -->
+	<element name="YET Firearm Rules" type="Information" source="Rev's Homebrew" id="ID_REV_YET_INFORMATION_FIREARMS">
+		<description>
+			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
+			<p class="indent"><strong><em>Misfire.</em></strong> When you make an attack roll with a firearm and the number on the die is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon can't be used again until you spend an action trying to repair it, which takes a successful Tinker's Tools check (DC equal to 8 + the Misfire score). If the check fails, the weapon is broken and must be mended outside combat at a quarter of the firearm's cost. A creature that isn't proficient with a firearm increases its Misfire score by 1.</p>
+		</description>
+	</element>
+
+	<!-- ===================== Hexfire Pistol ===================== -->
+	<!-- Base weapon, so the magic pistol below gets the right damage and range. -->
+	<element name="Hextech Pistol" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_HEXTECH_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>Firearm, light, one-handed. Range 60/180 ft. Reload 6, Misfire 2.</p>
+			<div class="reference">
+				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="force">1d8</set>
+			<set name="reload">6</set>
+		</setters>
+	</element>
+
+	<element name="Hexfire Pistol" type="Magic Item" source="Rev's Homebrew" id="ID_REV_YET_HEXFIRE_PISTOL">
+		<description>
+			<p><em>Weapon (firearm), rare</em></p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon. It is a light, one-handed firearm with a range of 60/180 feet that deals 1d8 force damage. Reload 6, Misfire 2.</p>
+			<p class="indent"><strong><em>Suppressive Shot.</em></strong> The pistol has 4 charges. Once per turn, when you hit a target with it, you can expend 1 charge before rolling damage. The target must succeed on a DC 16 Strength saving throw or fall prone. The pistol regains all expended charges daily at dawn.</p>
+			<div class="reference">
+				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
+			</div>
+		</description>
+		<sheet usage="4 Charges">
+			<description>Reload 6, Misfire 2. Suppressive Shot: once per turn on a hit, before damage, the target makes a DC 16 Str save or falls prone. Regains charges at dawn.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="weapon">Hextech Pistol</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="charges">4</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Magelock Rifle ===================== -->
+	<element name="Magelock Rifle" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_MAGELOCK_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>Hextech firearm, two-handed. Range 120 ft. Reload 4, Misfire 2.</p>
+			<p class="indent"><strong><em>Overcharge.</em></strong> Before you attack, you can overcharge the shot. Its Misfire score becomes 10, and on a hit the target must succeed on a DC 16 Constitution saving throw or be silenced until the end of its next turn.</p>
+			<div class="reference">
+				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Reload 4, Misfire 2. Overcharge: Misfire becomes 10; on a hit, DC 16 Con save or silenced until the end of its next turn.</description>
+		</sheet>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">120</set>
+			<set name="damage" type="force">1d12</set>
+			<set name="reload">4</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Silenced Sniper ===================== -->
+	<element name="Silenced Sniper" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_SILENCED_SNIPER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>Firearm, two-handed. Range 600 ft. Reload 1, Misfire 4.</p>
+			<p class="indent"><strong><em>Silenced.</em></strong> Attacking with this weapon doesn't end your invisibility.</p>
+			<div class="reference">
+				<div element="ID_REV_YET_INFORMATION_FIREARMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Reload 1, Misfire 4. Attacking with it doesn't end your invisibility.</description>
+		</sheet>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">600</set>
+			<set name="damage" type="force">3d10</set>
+			<set name="reload">1</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Tactical Baton ===================== -->
+	<element name="Tactical Baton" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_TACTICAL_BATON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>Melee weapon, light, finesse. Usually carried as a pair.</p>
+			<p class="indent"><strong><em>Shock.</em></strong> On a critical hit, the target is stunned until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>On a critical hit, the target is stunned until the end of its next turn.</description>
+		</sheet>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="lightning">1d8</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Grenades ===================== -->
+	<element name="Hex Grenade" type="Item" source="Rev's Homebrew" id="ID_REV_YET_ITEM_HEX_GRENADE">
+		<description>
+			<p>As an action, you throw the grenade at a point you can see. Each creature in a 20-foot radius of that point must succeed on a DC 16 Dexterity saving throw or take 6d6 force damage and be pushed 15 feet away from the point.</p>
+		</description>
+		<sheet action="Action">
+			<description>20 ft. radius. DC 16 Dex save or 6d6 force damage and pushed 15 ft.</description>
+		</sheet>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Smokecharge Grenade" type="Item" source="Rev's Homebrew" id="ID_REV_YET_ITEM_SMOKECHARGE_GRENADE">
+		<description>
+			<p><em>Single use.</em> As an action, you throw the device at a point within 40 feet of you. Thick magical smoke fills a 20-foot radius around that point for 1 minute. The area is heavily obscured.</p>
+		</description>
+		<sheet action="Action">
+			<description>Range 40 ft. Single use. 20 ft. radius of magical smoke for 1 minute; heavily obscured.</description>
+		</sheet>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rev's Homebrew: Dragon Hoard Items</name>
+		<update version="1.0.0">
+			<file name="items-revs-dragon-hoard.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-dragon-hoard.xml" />
+		</update>
+	</info>
+
+	<!-- Each stage repeats the earlier stages' properties, like the Fang and Klauth's Glaive in items-weapons.xml. -->
+
+	<!-- ===================== Greatsword of the Black Doom ===================== -->
+	<element name="Greatsword of the Black Doom (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_GREATSWORD_OF_THE_BLACK_DOOM_SLUMBERING">
+		<description>
+			<p><em>Weapon (greatsword), legendary (requires attunement)</em></p>
+			<p>The sword takes the color of a dragon, and its element follows that color. "Your element" below refers to it.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong></p>
+			<p class="indent"><strong><em>Doom Splash.</em></strong> When you roll a 20 on an attack roll with this weapon, you can choose any creatures within 5 feet of the target. Each of them takes 5 damage of your element.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Doom Splash. On a natural 20, creatures of your choice within 5 ft. of the target take 5 damage of your element.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Greatsword of the Black Doom (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_GREATSWORD_OF_THE_BLACK_DOOM_STIRRING">
+		<description>
+			<p><em>Weapon (greatsword), legendary (requires attunement)</em></p>
+			<p>The sword takes the color of a dragon, and its element follows that color.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong> You gain a +1 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent"><strong><em>Elemental Edge.</em></strong> A hit with this weapon deals an extra 1d6 damage of your element.</p>
+			<p class="indent"><strong><em>Doom Splash.</em></strong> When you roll a 20 on an attack roll with this weapon, you can choose any creatures within 5 feet of the target. Each of them takes 5 damage of your element.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Hits deal +1d6 damage of your element. Doom Splash. On a natural 20, creatures of your choice within 5 ft. of the target take 5 damage of your element.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+	<element name="Greatsword of the Black Doom (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_GREATSWORD_OF_THE_BLACK_DOOM_WAKENED">
+		<description>
+			<p><em>Weapon (greatsword), legendary (requires attunement)</em></p>
+			<p>The sword takes the color of a dragon, and its element follows that color.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong> You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
+			<p class="indent"><strong><em>Elemental Edge.</em></strong> A hit with this weapon deals an extra 2d6 damage of your element.</p>
+			<p class="indent"><strong><em>Doom Splash.</em></strong> When you roll a 20 on an attack roll with this weapon, you can choose any creatures within 5 feet of the target. Each of them takes 5 damage of your element.</p>
+			<p class="indent"><strong><em>Dragon's Wake (1/Long Rest).</em></strong> As an action, you slash a 30-foot cone of draconic energy. Each creature in the cone must make a DC 16 Dexterity saving throw, taking 8d6 damage of your element on a failed save, or half as much on a successful one. You can't use this property again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Hits deal +2d6 damage of your element. Doom Splash. On a natural 20, creatures of your choice within 5 ft. of the target take 5 damage of your element. Dragon's Wake: 30 ft. cone, DC 16 Dex save, 8d6 damage of your element (half on a success).</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Klauth's Staff of Brimstone ===================== -->
+	<element name="Klauth's Staff of Brimstone (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_KLAUTHS_STAFF_OF_BRIMSTONE_SLUMBERING">
+		<description>
+			<p><em>Staff, legendary (requires attunement)</em></p>
+			<p>The staff carries a dragon's element. "Your element" below refers to it.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong> Your speed increases by 10 feet.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Your speed increases by 10 ft.</description>
+		</sheet>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Klauth's Staff of Brimstone (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_KLAUTHS_STAFF_OF_BRIMSTONE_STIRRING">
+		<description>
+			<p><em>Staff, legendary (requires attunement)</em></p>
+			<p>The staff carries a dragon's element.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong> Your speed increases by 10 feet.</p>
+			<p class="indent"><strong><em>Draconic Displacement.</em></strong> Each time you expend a spell slot, you can teleport to an unoccupied space you can see within 15 feet of you.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Your speed increases by 10 ft. Draconic Displacement. Each time you expend a spell slot, you can teleport to a space you can see within 15 ft.</description>
+		</sheet>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Klauth's Staff of Brimstone (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_KLAUTHS_STAFF_OF_BRIMSTONE_WAKENED">
+		<description>
+			<p><em>Staff, legendary (requires attunement)</em></p>
+			<p>The staff carries a dragon's element.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong> Your speed increases by 10 feet.</p>
+			<p class="indent"><strong><em>Draconic Displacement.</em></strong> Each time you expend a spell slot, you can teleport to an unoccupied space you can see within 15 feet of you.</p>
+			<p class="indent"><strong><em>Elemental Transformation.</em></strong> As a bonus action, you take the form of your element for 1 minute and become partially incorporeal. For the duration:</p>
+			<ul>
+				<li>Your speed increases by an additional 10 feet, and you can move through an opening as narrow as 1 inch.</li>
+				<li>You can't take any action except the Dash action.</li>
+				<li>You are immune to nonmagical damage and to damage of your element.</li>
+				<li>A creature that enters your space during a turn or starts its turn there must succeed on a Dexterity saving throw against your spell save DC or take 2d8 damage of your element.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Your speed increases by 10 ft. Draconic Displacement. Each time you expend a spell slot, you can teleport to a space you can see within 15 ft. Elemental Transformation (1 minute): +10 ft. speed, fit through 1-inch openings, only the Dash action, immune to nonmagical damage and your element; a creature entering or starting its turn in your space makes a Dex save vs. your spell save DC or takes 2d8 damage of your element.</description>
+		</sheet>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<!-- ===================== Lost Secrets of Icingdeath ===================== -->
+	<element name="Lost Secrets of Icingdeath (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_LOST_SECRETS_OF_ICINGDEATH_SLUMBERING">
+		<description>
+			<p><em>Wondrous item (tome), legendary (requires attunement)</em></p>
+			<p class="indent"><strong><em>Slumbering.</em></strong> Your mind is sharpened by draconic instincts. You have advantage on initiative rolls.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Advantage on initiative rolls.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+
+	<element name="Lost Secrets of Icingdeath (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_LOST_SECRETS_OF_ICINGDEATH_STIRRING">
+		<description>
+			<p><em>Wondrous item (tome), legendary (requires attunement)</em></p>
+			<p>The tome has consumed the energy of a young dragon and changed to fit that dragon's color: black (acid), blue (lightning), green (poison), red (fire) or white (cold). "The tome's element" below refers to it.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong> You have advantage on initiative rolls.</p>
+			<p class="indent"><strong><em>Draconic Lore.</em></strong> You gain a +1 bonus to your spell save DC.</p>
+			<p class="indent"><strong><em>Elemental Focus.</em></strong> When you roll damage for a spell that deals damage of the tome's element, you can reroll any 1s on those damage dice.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Advantage on initiative rolls. +1 spell save DC. Reroll 1s on damage dice of spells that deal the tome's element.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Lost Secrets of Icingdeath (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_LOST_SECRETS_OF_ICINGDEATH_WAKENED">
+		<description>
+			<p><em>Wondrous item (tome), legendary (requires attunement)</em></p>
+			<p>The tome has consumed the energy of a young dragon and changed to fit that dragon's color. Choose the color when you attune to the tome.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong> You have advantage on initiative rolls.</p>
+			<p class="indent"><strong><em>Draconic Lore.</em></strong> You gain a +2 bonus to your spell save DC.</p>
+			<p class="indent"><strong><em>Elemental Focus.</em></strong> When you roll damage for a spell that deals damage of the tome's element, you can reroll any 1s on those damage dice.</p>
+			<p class="indent"><strong><em>Draconic Secrets.</em></strong> Two spells appear in the tome, based on its color. They are always prepared, they don't count against the number of spells you can prepare, and you can cast each of them once without expending a spell slot. You regain the ability to do so when you finish a long rest.</p>
+			<table>
+				<thead><tr><td>Color</td><td>Spells</td></tr></thead>
+				<tr><td>Black</td><td><em>Melf's acid arrow</em>, <em>vitriolic sphere</em></td></tr>
+				<tr><td>Blue</td><td><em>lightning bolt</em>, <em>storm sphere</em></td></tr>
+				<tr><td>Green</td><td><em>ray of sickness</em>, <em>cloudkill</em></td></tr>
+				<tr><td>Red</td><td><em>Melf's minute meteors</em>, <em>wall of fire</em></td></tr>
+				<tr><td>White</td><td><em>Rime's binding ice</em>, Ice Shield (<em>fire shield</em>, chill shield only)</td></tr>
+			</table>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Advantage on initiative rolls. +2 spell save DC. Reroll 1s on damage dice of spells that deal the tome's element. Draconic Secrets: cast each of the tome's two spells once per long rest without a spell slot.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:dc" value="2" />
+			<select type="Class Feature" name="Lost Secrets of Icingdeath, Color" supports="Icingdeath Color" />
+		</rules>
+	</element>
+
+	<!-- Color choices for the Wakened tome. Each grants its two spells. -->
+	<element name="Icingdeath Color: Black" type="Class Feature" source="Rev's Homebrew" id="ID_REV_ICINGDEATH_COLOR_BLACK">
+		<supports>Icingdeath Color</supports>
+		<description>
+			<p>The tome is black and channels acid. Its spells are <em>Melf's acid arrow</em> and <em>vitriolic sphere</em>.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>Black (acid). Cast Melf's acid arrow and vitriolic sphere once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" />
+			<grant type="Spell" id="ID_XGTE_SPELL_VITRIOLIC_SPHERE" />
+		</rules>
+	</element>
+
+	<element name="Icingdeath Color: Blue" type="Class Feature" source="Rev's Homebrew" id="ID_REV_ICINGDEATH_COLOR_BLUE">
+		<supports>Icingdeath Color</supports>
+		<description>
+			<p>The tome is blue and channels lightning. Its spells are <em>lightning bolt</em> and <em>storm sphere</em>.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>Blue (lightning). Cast lightning bolt and storm sphere once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" />
+		</rules>
+	</element>
+
+	<element name="Icingdeath Color: Green" type="Class Feature" source="Rev's Homebrew" id="ID_REV_ICINGDEATH_COLOR_GREEN">
+		<supports>Icingdeath Color</supports>
+		<description>
+			<p>The tome is green and channels poison. Its spells are <em>ray of sickness</em> and <em>cloudkill</em>.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>Green (poison). Cast ray of sickness and cloudkill once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" />
+		</rules>
+	</element>
+
+	<element name="Icingdeath Color: Red" type="Class Feature" source="Rev's Homebrew" id="ID_REV_ICINGDEATH_COLOR_RED">
+		<supports>Icingdeath Color</supports>
+		<description>
+			<p>The tome is red and channels fire. Its spells are <em>Melf's minute meteors</em> and <em>wall of fire</em>.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>Red (fire). Cast Melf's minute meteors and wall of fire once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Icingdeath Color: White" type="Class Feature" source="Rev's Homebrew" id="ID_REV_ICINGDEATH_COLOR_WHITE">
+		<supports>Icingdeath Color</supports>
+		<description>
+			<p>The tome is white and channels cold. Its spells are <em>Rime's binding ice</em> and Ice Shield, which is <em>fire shield</em> with the chill shield only.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>White (cold). Cast Rime's binding ice and Ice Shield (fire shield, chill shield only) once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" />
+		</rules>
+	</element>
+
+	<!-- ===================== Venom's Gilded Jewels ===================== -->
+	<element name="Venom's Gilded Jewels (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VENOMS_GILDED_JEWELS_SLUMBERING">
+		<description>
+			<p><em>Wondrous item (jewelry), legendary (requires attunement)</em></p>
+			<p>The jewels carry a dragon's element. "Your element" below refers to it.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong> Your thoughts are shielded by draconic courage.</p>
+			<p class="indent"><strong><em>Bravery.</em></strong> You have advantage on saving throws against being charmed or frightened.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Bravery. Advantage on saves against being charmed or frightened.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">neck</set>
+		</setters>
+	</element>
+
+	<element name="Venom's Gilded Jewels (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VENOMS_GILDED_JEWELS_STIRRING">
+		<description>
+			<p><em>Wondrous item (jewelry), legendary (requires attunement)</em></p>
+			<p>The jewels carry a dragon's element.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong></p>
+			<p class="indent"><strong><em>Bravery.</em></strong> You have advantage on saving throws against being charmed or frightened.</p>
+			<p class="indent"><strong><em>Tough Skin.</em></strong> You gain a +1 bonus to AC, and your hit point maximum increases by 10.</p>
+			<p class="indent"><strong><em>Aura of Bravery.</em></strong> Creatures of your choice within 30 feet of you also gain the benefit of Bravery.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet>
+			<description>Bravery. You and creatures of your choice within 30 ft. have advantage on saves against being charmed or frightened. +1 AC, +10 hit point maximum.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">neck</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="hp" value="10" />
+		</rules>
+	</element>
+
+	<element name="Venom's Gilded Jewels (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VENOMS_GILDED_JEWELS_WAKENED">
+		<description>
+			<p><em>Wondrous item (jewelry), legendary (requires attunement)</em></p>
+			<p>The jewels carry a dragon's element.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong></p>
+			<p class="indent"><strong><em>Bravery.</em></strong> You have advantage on saving throws against being charmed or frightened.</p>
+			<p class="indent"><strong><em>Tough Skin.</em></strong> You gain a +1 bonus to AC, and your hit point maximum increases by 15.</p>
+			<p class="indent"><strong><em>Aura of Bravery.</em></strong> Creatures of your choice within 30 feet of you also gain the benefit of Bravery.</p>
+			<p class="indent"><strong><em>Jewels' Protection (1/Long Rest).</em></strong> As a reaction when you are hit by damage of your element, you take no damage and instead regain hit points equal to the damage you would have taken. You can't use this property again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest" action="Reaction">
+			<description>Bravery. You and creatures of your choice within 30 ft. have advantage on saves against being charmed or frightened. +1 AC, +15 hit point maximum. Jewels' Protection: when hit by damage of your element, take none and heal that much instead.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">neck</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="hp" value="15" />
+		</rules>
+	</element>
+</elements>
