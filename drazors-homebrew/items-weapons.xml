@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Weapons</name>
-		<update version="2.1.0">
+		<update version="2.2.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
 		</update>
 	</info>
@@ -175,7 +175,7 @@
 	</element>
 
 	<!-- ===================== Fatestealer ===================== -->
-	<element name="Fatestealer" type="Magic Item" source="Drazor's Homebrew Content" id="ID_FATESTEALER_DRAZOR">
+	<element name="Fatestealer" type="Magic Item" source="Rev's Homebrew" id="ID_FATESTEALER_DRAZOR">
 		<description>
 			<p><em>Weapon (shortsword), very rare (requires attunement)</em></p>
 			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
@@ -199,7 +199,7 @@
 	</element>
 
 	<!-- ===================== Klauth's Scalerender Glaive ===================== -->
-	<element name="Klauth's Scalerender Glaive (Slumbering)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_SLUMBERING">
+	<element name="Klauth's Scalerender Glaive (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_SLUMBERING">
 		<description>
 			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
 			<p>Forged from scaled iron said to be quenched in the embers of Klauth, this glaive hums with a slow, volcanic pulse. Charred leather binds the haft; the black-red blade glitters like cooled magma.</p>
@@ -224,7 +224,7 @@
 		</setters>
 	</element>
 
-	<element name="Klauth's Scalerender Glaive (Stirring)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_STIRRING">
+	<element name="Klauth's Scalerender Glaive (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_STIRRING">
 		<description>
 			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
 			<p>The glaive's glow brightens, sparks of draconic power licking along the edge.</p>
@@ -252,7 +252,7 @@
 		</setters>
 	</element>
 
-	<element name="Klauth's Scalerender Glaive (Wakened)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_WAKENED">
+	<element name="Klauth's Scalerender Glaive (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_DRAZ_KLAUTHS_SCALERENDER_GLAIVE_WAKENED">
 		<description>
 			<p><em>Weapon (glaive), legendary (requires attunement)</em></p>
 			<p>A roaring heat fills the blade; dragon spirits whirl within its edge.</p>

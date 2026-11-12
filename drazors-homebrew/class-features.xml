@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Class Features</name>
-		<update version="2.0.0">
+		<update version="2.1.0">
 			<file name="class-features.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/class-features.xml" />
 		</update>
 	</info>
-    <element name="Eldritch Beam" type="Class Feature" source="Drazor's Homebrew Content" id="ID_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_BEAM">
+    <element name="Eldritch Beam" type="Class Feature" source="Rev's Homebrew" id="ID_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_BEAM">
         <supports>Eldritch Invocation</supports>
         <prerequisite>eldritch blast cantrip</prerequisite>
         <requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
