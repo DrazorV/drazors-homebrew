@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: Arcane Gear</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="items-revs-arcane-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-arcane-gear.xml" />
 		</update>
 	</info>
@@ -126,11 +126,11 @@
 	<element name="Vortex Wrap" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VORTEX_WRAP">
 		<description>
 			<p><em>Wondrous item, uncommon (requires attunement)</em></p>
-			<p class="indent">You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (it can choose to fail), or it is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.</p>
+			<p class="indent">You magically twist space around another creature you can see within 90 feet of you. The target must succeed on a Constitution saving throw (it can choose to fail), or it is teleported to an unoccupied space of your choice that you can see within 90 feet of you. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.</p>
 			<p class="indent"><strong><em>Malfunction.</em></strong> You can use this item once per day. If you try to use it a second time in the same day, it malfunctions after the effect, and you can't use it again for 1d4 days.</p>
 		</description>
 		<sheet usage="1/Day">
-			<description>Teleport a creature you can see within range to an unoccupied space you can see within range (Con save, it can choose to fail). A second use in one day makes it malfunction: unusable for 1d4 days.</description>
+			<description>Range 90 ft. Teleport a creature you can see to an unoccupied space you can see within range (Con save, it can choose to fail). A second use in one day makes it malfunction: unusable for 1d4 days.</description>
 		</sheet>
 		<setters>
 			<set name="category">Wondrous Items</set>
