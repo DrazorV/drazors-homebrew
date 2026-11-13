@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>Drazor's Homebrew</name>
-		<description>Drazor's and Rev's homebrew: Way of the Soul Sword monk, Gromman race, Eldritch Beam invocation, spells, magic items, dragon hoard items and YET gear.</description>
+		<description>Drazor's and Rev's homebrew: Way of the Soul Sword monk, Gromman race, Eldritch Beam invocation, spells, magic items, dragon hoard items, YET gear and arcane gear.</description>
 		<author url="https://github.com/DrazorV/drazors-homebrew">Drazor</author>
-		<update version="1.5.1">
+		<update version="1.6.0">
 			<file name="drazors-homebrew.index" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew.index" />
 		</update>
 	</info>
@@ -19,5 +19,6 @@
 		<file name="items-revs-magic.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-magic.xml" />
 		<file name="items-revs-dragon-hoard.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-dragon-hoard.xml" />
 		<file name="items-revs-yet-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-yet-gear.xml" />
+		<file name="items-revs-arcane-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-arcane-gear.xml" />
 	</files>
 </index>
