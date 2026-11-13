@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Weapons</name>
-		<update version="2.2.0">
+		<update version="2.3.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
 		</update>
 	</info>
@@ -43,14 +43,14 @@
 			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
 			<p class="indent"><strong><em>Stirring.</em></strong></p>
 			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
-			<p class="indent"><strong><em>Draconic Might.</em></strong> You gain a +1 bonus to attack rolls and damage rolls you make with weapon attacks and spell attacks.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +1 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons. In Borealis, equip the Fang (in hand, or as worn if you only carry it) so the bonus applies.</p>
 			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
 			<div class="reference">
 				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
 			</div>
 		</description>
 		<sheet>
-			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction). +1 to attack and damage rolls of weapon and spell attacks. Resistance to your element.</description>
+			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction). +1 to attack and damage rolls of all weapon and spell attacks (any weapon). Resistance to your element.</description>
 		</sheet>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -67,6 +67,18 @@
 			<stat name="ranged:attack" value="1" />
 			<stat name="ranged:damage" value="1" />
 			<stat name="spellcasting:attack" value="1" />
+			<!-- Spell attack damage: the engine adds it per cantrip row (<spell>:damage). -->
+			<stat name="chill touch:damage" value="1" />
+			<stat name="eldritch blast:damage" value="1" />
+			<stat name="fire bolt:damage" value="1" />
+			<stat name="magic stone:damage" value="1" />
+			<stat name="poison spray:damage" value="1" />
+			<stat name="primal savagery:damage" value="1" />
+			<stat name="produce flame:damage" value="1" />
+			<stat name="ray of frost:damage" value="1" />
+			<stat name="shocking grasp:damage" value="1" />
+			<stat name="starry wisp:damage" value="1" />
+			<stat name="thorn whip:damage" value="1" />
 			<select type="Class Feature" name="Fang of the Dragon of Statues, Element" supports="Fang Element" />
 		</rules>
 	</element>
@@ -79,7 +91,7 @@
 			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
 			<p class="indent"><strong><em>Wakened.</em></strong></p>
 			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 2d6 damage of your element. This requires no reaction.</p>
-			<p class="indent"><strong><em>Draconic Might.</em></strong> You gain a +2 bonus to attack rolls and damage rolls you make with weapon attacks and spell attacks.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +2 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons. In Borealis, equip the Fang (in hand, or as worn if you only carry it) so the bonus applies.</p>
 			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
 			<p class="indent"><strong><em>Ominous Presence (1/Long Rest).</em></strong> As a bonus action, you unleash the dragon's dread. Each creature of your choice within 60 feet of you that can see you must make a Wisdom saving throw against your spell save DC. On a failed save, a creature is frightened of you. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can't use this property again until you finish a long rest.</p>
 			<div class="reference">
@@ -87,7 +99,7 @@
 			</div>
 		</description>
 		<sheet usage="1/Long Rest" action="Bonus Action">
-			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 2d6 damage of your element (no reaction). +2 to attack and damage rolls of weapon and spell attacks. Resistance to your element. Ominous Presence (bonus action, 1/long rest): creatures of your choice within 60 ft. that can see you make a Wisdom save vs. your spell save DC or are frightened of you (repeat the save at the end of each of their turns).</description>
+			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 2d6 damage of your element (no reaction). +2 to attack and damage rolls of all weapon and spell attacks (any weapon). Resistance to your element. Ominous Presence (bonus action, 1/long rest): creatures of your choice within 60 ft. that can see you make a Wisdom save vs. your spell save DC or are frightened of you (repeat the save at the end of each of their turns).</description>
 		</sheet>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -104,6 +116,18 @@
 			<stat name="ranged:attack" value="2" />
 			<stat name="ranged:damage" value="2" />
 			<stat name="spellcasting:attack" value="2" />
+			<!-- Spell attack damage: the engine adds it per cantrip row (<spell>:damage). -->
+			<stat name="chill touch:damage" value="2" />
+			<stat name="eldritch blast:damage" value="2" />
+			<stat name="fire bolt:damage" value="2" />
+			<stat name="magic stone:damage" value="2" />
+			<stat name="poison spray:damage" value="2" />
+			<stat name="primal savagery:damage" value="2" />
+			<stat name="produce flame:damage" value="2" />
+			<stat name="ray of frost:damage" value="2" />
+			<stat name="shocking grasp:damage" value="2" />
+			<stat name="starry wisp:damage" value="2" />
+			<stat name="thorn whip:damage" value="2" />
 			<select type="Class Feature" name="Fang of the Dragon of Statues, Element" supports="Fang Element" />
 		</rules>
 	</element>
