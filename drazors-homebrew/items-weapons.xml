@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Weapons</name>
-		<update version="2.3.0">
+		<update version="2.4.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-weapons.xml" />
 		</update>
 	</info>
@@ -18,6 +18,31 @@
 			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger. "Your element" below refers to that choice.</p>
 			<p class="indent"><strong><em>Slumbering.</em></strong></p>
 			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
+			<p class="indent"><em>In Borealis the Fang's attunement and properties live on the separate item "Fang of the Dragon of Statues: Bond (Slumbering)". Equip and attune the Bond (it is worn, so your hands stay free), and equip this dagger only when you wield it. Don't attune the dagger itself.</em></p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Fang of the Dragon of Statues: Bond (Slumbering)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_SLUMBERING_BOND">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement)</em></p>
+			<p>The bond between the Fang of the Dragon of Statues and its bearer. Equip it (worn) and attune to it while you have the Fang on your person, whether the dagger is in your hand or not. It holds the Fang's attunement and properties; the dagger item is only the weapon you attack with.</p>
+			<p>Forged from the mighty scale of Iymrith, the ancient blue Dragon of Statues reigning over the desolate expanse of the desert Anauroch, this dagger holds unparalleled power.</p>
+			<p>Its core, a formidable eight-inch blade, bears a razor-sharp edge reminiscent of the dragon's own claws, its steel infused with an electric cobalt hue resonating with the dragon's presence. At its hilt, a meticulously crafted blue dragon's head emerges, an awe-inspiring symbol of the weapon's origins and the dominance of Iymrith.</p>
+			<p>The Fang was once the arcane focus of Amtar Rajul. Since his death it has passed to his brother, Umtar, and the slumbering dragon within has begun to answer to a new bearer.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the Bond. "Your element" below refers to that choice.</p>
+			<p class="indent"><strong><em>Slumbering.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
 			<div class="reference">
 				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
 			</div>
@@ -26,11 +51,10 @@
 			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction).</description>
 		</sheet>
 		<setters>
-			<set name="category">Magic Weapons</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="weapon">Dagger</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 		</setters>
@@ -43,7 +67,32 @@
 			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
 			<p class="indent"><strong><em>Stirring.</em></strong></p>
 			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
-			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +1 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons. In Borealis, equip the Fang (in hand, or as worn if you only carry it) so the bonus applies.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +1 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons.</p>
+			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
+			<p class="indent"><em>In Borealis the Fang's attunement and properties live on the separate item "Fang of the Dragon of Statues: Bond (Stirring)". Equip and attune the Bond (it is worn, so your hands stay free), and equip this dagger only when you wield it. Don't attune the dagger itself.</em></p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Fang of the Dragon of Statues: Bond (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_STIRRING_BOND">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement)</em></p>
+			<p>The bond between the Fang of the Dragon of Statues and its bearer. Equip it (worn) and attune to it while you have the Fang on your person, whether the dagger is in your hand or not. It holds the Fang's attunement and properties; the dagger item is only the weapon you attack with.</p>
+			<p>Sparks of cobalt lightning crawl along the blade, and the eyes of the dragon's head on the hilt begin to glow.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the Bond.</p>
+			<p class="indent"><strong><em>Stirring.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 1d6 damage of your element. This requires no reaction.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +1 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons.</p>
 			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
 			<div class="reference">
 				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
@@ -53,11 +102,10 @@
 			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 1d6 damage of your element (no reaction). +1 to attack and damage rolls of all weapon and spell attacks (any weapon). Resistance to your element.</description>
 		</sheet>
 		<setters>
-			<set name="category">Magic Weapons</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="weapon">Dagger</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 		</setters>
@@ -91,7 +139,33 @@
 			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the dagger.</p>
 			<p class="indent"><strong><em>Wakened.</em></strong></p>
 			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 2d6 damage of your element. This requires no reaction.</p>
-			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +2 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons. In Borealis, equip the Fang (in hand, or as worn if you only carry it) so the bonus applies.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +2 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons.</p>
+			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
+			<p class="indent"><strong><em>Ominous Presence (1/Long Rest).</em></strong> As a bonus action, you unleash the dragon's dread. Each creature of your choice within 60 feet of you that can see you must make a Wisdom saving throw against your spell save DC. On a failed save, a creature is frightened of you. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can't use this property again until you finish a long rest.</p>
+			<p class="indent"><em>In Borealis the Fang's attunement and properties live on the separate item "Fang of the Dragon of Statues: Bond (Wakened)". Equip and attune the Bond (it is worn, so your hands stay free), and equip this dagger only when you wield it. Don't attune the dagger itself.</em></p>
+			<div class="reference">
+				<div element="ID_WOTC_FTOD_INFORMATION_HOARD_MAGIC_ITEMS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="weapon">Dagger</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Fang of the Dragon of Statues: Bond (Wakened)" type="Magic Item" source="Rev's Homebrew" id="ID_FAND_OF_THE_DRAGON_OF_STATUES_AWAKENED_BOND">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement)</em></p>
+			<p>The bond between the Fang of the Dragon of Statues and its bearer. Equip it (worn) and attune to it while you have the Fang on your person, whether the dagger is in your hand or not. It holds the Fang's attunement and properties; the dagger item is only the weapon you attack with.</p>
+			<p>Iymrith's fury is fully awake. Storm light pours from the blade, and those who meet the eyes of the dragon's head feel the ancient wyrm looking back at them.</p>
+			<p class="indent"><strong><em>Element.</em></strong> The Fang channels one element: acid, cold, fire, lightning or thunder (Iymrith's own element is lightning). Choose it when you attune to the Bond.</p>
+			<p class="indent"><strong><em>Wakened.</em></strong></p>
+			<p class="indent"><strong><em>Dragon's Revenge.</em></strong> Once per turn, when you are hit by an attack made by a creature within 10 feet of you, the attacker takes 2d6 damage of your element. This requires no reaction.</p>
+			<p class="indent"><strong><em>Draconic Might.</em></strong> While you are attuned to the Fang and carry it on your person, you gain a +2 bonus to the attack rolls and damage rolls of all your weapon attacks and spell attacks, including attacks with other weapons.</p>
 			<p class="indent"><strong><em>Draconic Hide.</em></strong> You have resistance to damage of your element.</p>
 			<p class="indent"><strong><em>Ominous Presence (1/Long Rest).</em></strong> As a bonus action, you unleash the dragon's dread. Each creature of your choice within 60 feet of you that can see you must make a Wisdom saving throw against your spell save DC. On a failed save, a creature is frightened of you. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can't use this property again until you finish a long rest.</p>
 			<div class="reference">
@@ -102,11 +176,10 @@
 			<description>Dragon's Revenge. Once per turn, when a creature within 10 ft. hits you with an attack, it takes 2d6 damage of your element (no reaction). +2 to attack and damage rolls of all weapon and spell attacks (any weapon). Resistance to your element. Ominous Presence (bonus action, 1/long rest): creatures of your choice within 60 ft. that can see you make a Wisdom save vs. your spell save DC or are frightened of you (repeat the save at the end of each of their turns).</description>
 		</sheet>
 		<setters>
-			<set name="category">Magic Weapons</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="weapon">Dagger</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 		</setters>
