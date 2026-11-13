@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: Arcane Gear</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="items-revs-arcane-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-arcane-gear.xml" />
 		</update>
 	</info>
@@ -11,7 +11,7 @@
 	<element name="Force Gauntlets" type="Weapon" source="Rev's Homebrew" id="ID_REV_WEAPON_FORCE_GAUNTLETS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_FORCE</supports>
 		<description>
-			<p>Melee weapon. Usually worn as a pair.</p>
+			<p>Melee weapon.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -25,7 +25,7 @@
 	<element name="Fire Gauntlets" type="Weapon" source="Rev's Homebrew" id="ID_REV_WEAPON_FIRE_GAUNTLETS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
 		<description>
-			<p>Melee weapon. Usually worn as a pair.</p>
+			<p>Melee weapon.</p>
 			<p class="indent"><strong><em>Aflame.</em></strong> A target you hit is set aflame and takes 1d4 fire damage each round.</p>
 		</description>
 		<sheet>
@@ -79,7 +79,7 @@
 
 	<element name="Chains of Death" type="Magic Item" source="Rev's Homebrew" id="ID_REV_CHAINS_OF_DEATH">
 		<description>
-			<p><em>Weapon (chain), magic</em></p>
+			<p><em>Weapon (chain), rare</em></p>
 			<p class="indent">A magical chain you throw at a creature within 30 feet of you. It deals 1d6 piercing damage on a hit.</p>
 			<p class="indent"><strong><em>Retract.</em></strong> When you hit a creature, you can immediately retract the chain:</p>
 			<ul>
@@ -87,10 +87,10 @@
 				<li><strong>Your size.</strong> Make a contested Strength (Athletics) check. If you win, you pull the creature into the space in front of you.</li>
 				<li><strong>Larger than you.</strong> Retracting the chain pulls you to the creature instead.</li>
 			</ul>
-			<p class="indent"><strong><em>Grab.</em></strong> A creature your size or smaller that the chain grabs onto must succeed on a DC 15 saving throw or be grappled.</p>
+			<p class="indent"><strong><em>Grab.</em></strong> A creature your size or smaller that the chain grabs onto must succeed on a DC 15 Strength saving throw or be grappled.</p>
 		</description>
 		<sheet>
-			<description>Thrown, 30 ft. On a hit, retract the chain: a smaller creature is pulled in front of you; your size, contested Athletics check; larger, you are pulled to it. A creature your size or smaller it grabs is grappled (DC 15).</description>
+			<description>Thrown, 30 ft. On a hit, retract the chain: a smaller creature is pulled in front of you; your size, contested Athletics check; larger, you are pulled to it. A creature your size or smaller it grabs is grappled (DC 15 Str save).</description>
 		</sheet>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -98,6 +98,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="chain">Weapon</set>
 			<set name="weapon">Magical Chain</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 
@@ -106,10 +107,10 @@
 		<description>
 			<p><em>Wondrous item, rare</em></p>
 			<p class="indent"><strong><em>Absorb (1/Day).</em></strong> When you are hit by an attack or a harmful effect, you can use your reaction to absorb up to 25 points of the damage into the core. The stored points disappear at midnight.</p>
-			<p class="indent"><strong><em>Arcane Pull (1/Day).</em></strong> While the core holds at least 1 point, you can use a bonus action to unleash the stored arcane points. Each creature in a 30-foot cone must succeed on a DC 16 Dexterity saving throw or take 4d40 force damage.</p>
+			<p class="indent"><strong><em>Arcane Pull (1/Day).</em></strong> While the core holds at least 1 point, you can use a bonus action to unleash the stored arcane points. Each creature in a 30-foot cone must succeed on a DC 16 Dexterity saving throw or take 4d10 force damage.</p>
 		</description>
 		<sheet>
-			<description>Absorb (reaction, 1/day): when hit by an attack or harmful effect, absorb up to 25 damage into the core; points vanish at midnight. Arcane Pull (bonus action, 1/day, core holds 1+ point): 30 ft. cone, DC 16 Dex save or 4d40 force damage.</description>
+			<description>Absorb (reaction, 1/day): when hit by an attack or harmful effect, absorb up to 25 damage into the core; points vanish at midnight. Arcane Pull (bonus action, 1/day, core holds 1+ point): 30 ft. cone, DC 16 Dex save or 4d10 force damage.</description>
 		</sheet>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -124,7 +125,7 @@
 	<!-- ===================== Vortex Wrap ===================== -->
 	<element name="Vortex Wrap" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VORTEX_WRAP">
 		<description>
-			<p><em>Wondrous item (requires attunement)</em></p>
+			<p><em>Wondrous item, uncommon (requires attunement)</em></p>
 			<p class="indent">You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (it can choose to fail), or it is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.</p>
 			<p class="indent"><strong><em>Malfunction.</em></strong> You can use this item once per day. If you try to use it a second time in the same day, it malfunctions after the effect, and you can't use it again for 1d4 days.</p>
 		</description>
@@ -137,6 +138,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
 	</element>
