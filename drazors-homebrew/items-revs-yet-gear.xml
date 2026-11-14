@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: YET Gear</name>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="items-revs-yet-gear.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-yet-gear.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
 	<!-- ===================== Hexfire Pistol ===================== -->
 	<!-- Base weapon, so the magic pistol below gets the right damage and range. -->
 	<element name="Hextech Pistol" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_HEXTECH_PISTOL">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p>Firearm, light, one-handed. Range 60/180 ft. Reload 6, Misfire 2.</p>
 			<p class="indent"><strong><em>Reload.</em></strong> A firearm can be fired a number of times equal to its Reload score before you must spend one attack or one action to reload it. You need one free hand to reload a firearm.</p>
@@ -55,7 +55,7 @@
 
 	<!-- ===================== Magelock Rifle ===================== -->
 	<element name="Magelock Rifle" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_MAGELOCK_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description>
 			<p>Hextech firearm, two-handed. Range 120 ft. Reload 4, Misfire 2.</p>
 			<p class="indent"><strong><em>Overcharge.</em></strong> Before you attack, you can overcharge the shot. Its Misfire score becomes 10, and on a hit the target must succeed on a DC 16 Constitution saving throw or be silenced until the end of its next turn.</p>
@@ -78,7 +78,7 @@
 
 	<!-- ===================== Silenced Sniper ===================== -->
 	<element name="Silenced Sniper" type="Weapon" source="Rev's Homebrew" id="ID_REV_YET_WEAPON_SILENCED_SNIPER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description>
 			<p>Firearm, two-handed. Range 600 ft. Reload 1, Misfire 4.</p>
 			<p class="indent"><strong><em>Silenced.</em></strong> Attacking with this weapon doesn't end your invisibility.</p>
