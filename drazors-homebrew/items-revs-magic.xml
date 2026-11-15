@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: Magic Items</name>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="items-revs-magic.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-magic.xml" />
 		</update>
 	</info>
@@ -76,6 +76,33 @@
 			<set name="category">Potions</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- ===================== Vial With Percy's Blood ===================== -->
+	<element name="Vial With Percy's Blood" type="Magic Item" source="Rev's Homebrew" id="ID_REV_VIAL_WITH_PERCYS_BLOOD">
+		<description>
+			<p><em>Potion, very rare</em></p>
+			<p>A vial of Percy's blood. When you drink it, you gain the following benefits for 1 hour.</p>
+			<ul>
+				<li><strong>Regeneration.</strong> At the start of each of your turns, you regain 2d10 hit points. If you start your turn in sunlight or running water, you instead take 2d10 damage.</li>
+				<li><strong>Spider Climb.</strong> You can climb walls and walk along ceilings, and you have a climbing speed equal to your walking speed.</li>
+				<li><strong>Mist Step.</strong> You can cast <em>misty step</em> without expending a spell slot. You can do so up to three times during the potion's duration.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MISTY_STEP" />
+			</div>
+		</description>
+		<sheet>
+			<description>For 1 hour: regain 2d10 HP at the start of each turn (take 2d10 damage instead in sunlight or running water); climb speed equal to walking speed, walk on walls and ceilings; misty step 3 times without a spell slot.</description>
+		</sheet>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Very Rare</set>
 			<set name="stackable">true</set>

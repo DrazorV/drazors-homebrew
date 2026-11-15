@@ -9,7 +9,7 @@ Homebrew content for Aurora and Borealis (D&D 5e, 2014 rules):
 - Magic weapons (all by Rev: Fang of the Dragon of Statues, Fatestealer, Klauth's Scalerender Glaive) and armor
 - More items by Rev:
   - Dragon hoard items with Slumbering/Stirring/Wakened stages: Greatsword of the Black Doom, Klauth's Staff of Brimstone, Lost Secrets of Icingdeath, Venom's Gilded Jewels
-  - Blooddrinker Axe; Sarialax, Bow of the Dranorri Rangers; Vampiric Draught
+  - Blooddrinker Axe; Sarialax, Bow of the Dranorri Rangers; Vampiric Draught; Vial With Percy's Blood
   - YET gear: Hexfire Pistol, Magelock Rifle, Silenced Sniper, Tactical Baton, Hex Grenade, Smokecharge Grenade
   - Arcane gear: Force Gauntlets, Fire Gauntlets, Arcane Bolt, Chains of Death, Arcane Sync Core (Rare), Vortex Wrap
 
