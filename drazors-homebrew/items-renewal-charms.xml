@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drazor's Homebrew: Renewal Charms and Spell Gems</name>
+		<update version="1.0.0">
+			<file name="items-renewal-charms.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-renewal-charms.xml" />
+		</update>
+	</info>
+
+	<!-- ===================== Renewal Charms: raise the feature's own count ===================== -->
+
+	<element name="Renewal Charm (Rage)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_RAGE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a barbarian)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Rage.</em></strong> Your number of Rage uses increases by 1.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Rage. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="barbarian rage:count" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Channel Divinity)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_CHANNEL_DIVINITY">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a cleric or paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Channel Divinity.</em></strong> You can use Channel Divinity one more time before it recharges.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Channel Divinity. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="channel divinity:count" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Indomitable)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_INDOMITABLE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Indomitable.</em></strong> You can use Indomitable one more time before you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Indomitable. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="indomitable:usage" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Ki)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_KI">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a monk)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Ki.</em></strong> Your ki point maximum increases by 2.</p>
+		</description>
+		<sheet>
+			<description>+2 ki points. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ki:points" value="2" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Divine Sense)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_DIVINE_SENSE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Divine Sense.</em></strong> You can use Divine Sense one more time before you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Divine Sense. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="divine sense:count" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Lay on Hands)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_LAY_ON_HANDS">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Lay on Hands.</em></strong> Your Lay on Hands pool of healing increases by 5 hit points.</p>
+		</description>
+		<sheet>
+			<description>+5 HP to your Lay on Hands pool. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="lay on hands:hp pool" value="5" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Cleansing Touch)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_CLEANSING_TOUCH">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Cleansing Touch.</em></strong> You can use Cleansing Touch one more time before you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Cleansing Touch. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="cleansing touch:count" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Pact Magic)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_PACT_MAGIC">
+		<description>
+			<p><em>Wondrous item, rare (requires attunement by a warlock)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Pact Magic.</em></strong> You gain one additional Pact Magic spell slot. It is the same level as your other Pact Magic slots and recharges with them.</p>
+		</description>
+		<sheet>
+			<description>+1 Pact Magic spell slot. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:slots:count" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm (Flash of Genius)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_FLASH_OF_GENIUS">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a artificer)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Flash of Genius.</em></strong> You can use Flash of Genius one more time before you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>+1 use of Flash of Genius. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="flash of genius:usage" value="1" equipped="true" />
+		</rules>
+	</element>
+
+	<!-- ===================== Renewal Charms: own tracker (feature has a fixed count) ===================== -->
+
+	<element name="Renewal Charm (Grit)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_GRIT">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a gunslinger)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Grit.</em></strong> You have 2 extra grit points, which you can spend like your others. They return when you finish a short or long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra grit points tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_GRIT_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Grit" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_GRIT_FEATURE">
+		<description>
+			<p>You have 2 extra grit points, which you can spend like your others. They return when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="2/Short Rest">
+			<description>You have 2 extra grit points, which you can spend like your others. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Bardic Inspiration)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_BARDIC_INSPIRATION">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a bard)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Bardic Inspiration.</em></strong> You can give one additional Bardic Inspiration die. It recharges when you finish a long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Bardic Inspiration tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_BARDIC_INSPIRATION_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Bardic Inspiration" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_BARDIC_INSPIRATION_FEATURE">
+		<description>
+			<p>You can give one additional Bardic Inspiration die. It recharges when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can give one additional Bardic Inspiration die. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Font of Magic)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SORCERY_POINTS">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a sorcerer)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Font of Magic.</em></strong> You have 2 extra sorcery points, which you can spend like your others. They return when you finish a long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra sorcery points tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_SORCERY_POINTS_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Font of Magic" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SORCERY_POINTS_FEATURE">
+		<description>
+			<p>You have 2 extra sorcery points, which you can spend like your others. They return when you finish a long rest.</p>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>You have 2 extra sorcery points, which you can spend like your others. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Wild Shape)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_WILD_SHAPE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a druid)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Wild Shape.</em></strong> You can use Wild Shape one additional time. It recharges when you finish a short or long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Wild Shape tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_WILD_SHAPE_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Wild Shape" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_WILD_SHAPE_FEATURE">
+		<description>
+			<p>You can use Wild Shape one additional time. It recharges when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can use Wild Shape one additional time. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Second Wind)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SECOND_WIND">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Second Wind.</em></strong> You can use Second Wind one additional time. It recharges when you finish a short or long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Second Wind tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_SECOND_WIND_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Second Wind" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SECOND_WIND_FEATURE">
+		<description>
+			<p>You can use Second Wind one additional time. It recharges when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can use Second Wind one additional time. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Action Surge)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ACTION_SURGE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Action Surge.</em></strong> You can use Action Surge one additional time, but still only once on the same turn. It recharges when you finish a short or long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Action Surge tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_ACTION_SURGE_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Action Surge" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ACTION_SURGE_FEATURE">
+		<description>
+			<p>You can use Action Surge one additional time, but still only once on the same turn. It recharges when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can use Action Surge one additional time, but still only once on the same turn. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Favored Foe)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_FAVORED_FOE">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a ranger)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Favored Foe.</em></strong> You can use Favored Foe one additional time. It recharges when you finish a long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Favored Foe tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_FAVORED_FOE_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Favored Foe" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_FAVORED_FOE_FEATURE">
+		<description>
+			<p>You can use Favored Foe one additional time. It recharges when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can use Favored Foe one additional time. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Stroke of Luck)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_STROKE_OF_LUCK">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a rogue)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Stroke of Luck.</em></strong> You can use Stroke of Luck one additional time. It recharges when you finish a short or long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Stroke of Luck tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_STROKE_OF_LUCK_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Stroke of Luck" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_STROKE_OF_LUCK_FEATURE">
+		<description>
+			<p>You can use Stroke of Luck one additional time. It recharges when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can use Stroke of Luck one additional time. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Mystic Arcanum)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_MYSTIC_ARCANUM">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a warlock)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Mystic Arcanum.</em></strong> You can cast one of your Mystic Arcanum spells one additional time without expending a spell slot. It recharges when you finish a long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Mystic Arcanum tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_MYSTIC_ARCANUM_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Mystic Arcanum" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_MYSTIC_ARCANUM_FEATURE">
+		<description>
+			<p>You can cast one of your Mystic Arcanum spells one additional time without expending a spell slot. It recharges when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast one of your Mystic Arcanum spells one additional time without expending a spell slot. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<element name="Renewal Charm (Arcane Recovery)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ARCANE_RECOVERY">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a wizard)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p class="indent"><strong><em>Arcane Recovery.</em></strong> You can use Arcane Recovery one additional time when you finish a short rest. It recharges when you finish a long rest.</p>
+			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
+		</description>
+		<sheet>
+			<description>Grants the extra use of Arcane Recovery tracker while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_DRAZ_RENEWAL_CHARM_ARCANE_RECOVERY_FEATURE" />
+		</rules>
+	</element>
+
+	<element name="Renewal Charm: Arcane Recovery" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ARCANE_RECOVERY_FEATURE">
+		<description>
+			<p>You can use Arcane Recovery one additional time when you finish a short rest. It recharges when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can use Arcane Recovery one additional time when you finish a short rest. Spend from this tracker.</description>
+		</sheet>
+	</element>
+
+	<!-- ===================== Spell Gems: one extra spell slot of a set level ===================== -->
+
+	<element name="Spell Gem (1st Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 1st-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 1st-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (1st Level), Class" supports="Drazor Spell Gem 1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_BARD">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_CLERIC">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_DRUID">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_SORCERER">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_WIZARD">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Paladin" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_PALADIN">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level paladin spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="paladin:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Ranger" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_RANGER">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level ranger spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ranger:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Artificer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_ARTIFICER">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level artificer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="artificer:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Eldritch Knight" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_ELDRITCH_KNIGHT">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level eldritch knight spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (1st Level): Arcane Trickster" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1_ARCANE_TRICKSTER">
+		<supports>Drazor Spell Gem 1</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 1st-level arcane trickster spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2">
+		<description>
+			<p><em>Wondrous item, uncommon (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 2nd-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 2nd-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (2nd Level), Class" supports="Drazor Spell Gem 2" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_BARD">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_CLERIC">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_DRUID">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_SORCERER">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_WIZARD">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Paladin" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_PALADIN">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level paladin spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="paladin:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Ranger" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_RANGER">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level ranger spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ranger:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Artificer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_ARTIFICER">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level artificer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="artificer:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Eldritch Knight" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_ELDRITCH_KNIGHT">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level eldritch knight spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (2nd Level): Arcane Trickster" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2_ARCANE_TRICKSTER">
+		<supports>Drazor Spell Gem 2</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 2nd-level arcane trickster spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3">
+		<description>
+			<p><em>Wondrous item, rare (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 3rd-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 3rd-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (3rd Level), Class" supports="Drazor Spell Gem 3" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_BARD">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_CLERIC">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_DRUID">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_SORCERER">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_WIZARD">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Paladin" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_PALADIN">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level paladin spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="paladin:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Ranger" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_RANGER">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level ranger spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ranger:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Artificer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_ARTIFICER">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level artificer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="artificer:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Eldritch Knight" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_ELDRITCH_KNIGHT">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level eldritch knight spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (3rd Level): Arcane Trickster" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3_ARCANE_TRICKSTER">
+		<supports>Drazor Spell Gem 3</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 3rd-level arcane trickster spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4">
+		<description>
+			<p><em>Wondrous item, rare (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 4th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 4th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (4th Level), Class" supports="Drazor Spell Gem 4" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_BARD">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_CLERIC">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_DRUID">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_SORCERER">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_WIZARD">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Paladin" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_PALADIN">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level paladin spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="paladin:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Ranger" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_RANGER">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level ranger spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ranger:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Artificer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_ARTIFICER">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level artificer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="artificer:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Eldritch Knight" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_ELDRITCH_KNIGHT">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level eldritch knight spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (4th Level): Arcane Trickster" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4_ARCANE_TRICKSTER">
+		<supports>Drazor Spell Gem 4</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 4th-level arcane trickster spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5">
+		<description>
+			<p><em>Wondrous item, very rare (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 5th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 5th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (5th Level), Class" supports="Drazor Spell Gem 5" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_BARD">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_CLERIC">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_DRUID">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_SORCERER">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_WIZARD">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Paladin" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_PALADIN">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level paladin spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="paladin:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Ranger" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_RANGER">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level ranger spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ranger:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (5th Level): Artificer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5_ARTIFICER">
+		<supports>Drazor Spell Gem 5</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 5th-level artificer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="artificer:spellcasting:slots:5" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6">
+		<description>
+			<p><em>Wondrous item, very rare (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 6th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 6th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (6th Level), Class" supports="Drazor Spell Gem 6" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6_BARD">
+		<supports>Drazor Spell Gem 6</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 6th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:6" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6_CLERIC">
+		<supports>Drazor Spell Gem 6</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 6th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:6" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6_DRUID">
+		<supports>Drazor Spell Gem 6</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 6th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:6" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6_SORCERER">
+		<supports>Drazor Spell Gem 6</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 6th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:6" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (6th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6_WIZARD">
+		<supports>Drazor Spell Gem 6</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 6th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:6" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 7th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 7th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (7th Level), Class" supports="Drazor Spell Gem 7" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7_BARD">
+		<supports>Drazor Spell Gem 7</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 7th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:7" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7_CLERIC">
+		<supports>Drazor Spell Gem 7</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 7th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:7" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7_DRUID">
+		<supports>Drazor Spell Gem 7</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 7th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:7" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7_SORCERER">
+		<supports>Drazor Spell Gem 7</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 7th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:7" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (7th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7_WIZARD">
+		<supports>Drazor Spell Gem 7</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 7th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:7" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 8th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 8th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (8th Level), Class" supports="Drazor Spell Gem 8" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8_BARD">
+		<supports>Drazor Spell Gem 8</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 8th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:8" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8_CLERIC">
+		<supports>Drazor Spell Gem 8</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 8th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:8" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8_DRUID">
+		<supports>Drazor Spell Gem 8</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 8th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:8" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8_SORCERER">
+		<supports>Drazor Spell Gem 8</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 8th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:8" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (8th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8_WIZARD">
+		<supports>Drazor Spell Gem 8</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 8th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:8" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9">
+		<description>
+			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 9th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
+		</description>
+		<sheet>
+			<description>+1 9th-level spell slot for the class you chose. Only while equipped.</description>
+		</sheet>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Spell Gem (9th Level), Class" supports="Drazor Spell Gem 9" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level): Bard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9_BARD">
+		<supports>Drazor Spell Gem 9</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 9th-level bard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="bard:spellcasting:slots:9" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level): Cleric" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9_CLERIC">
+		<supports>Drazor Spell Gem 9</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 9th-level cleric spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="cleric:spellcasting:slots:9" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level): Druid" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9_DRUID">
+		<supports>Drazor Spell Gem 9</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 9th-level druid spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="druid:spellcasting:slots:9" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level): Sorcerer" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9_SORCERER">
+		<supports>Drazor Spell Gem 9</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 9th-level sorcerer spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:9" value="1" />
+		</rules>
+	</element>
+
+	<element name="Spell Gem (9th Level): Wizard" type="Class Feature" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9_WIZARD">
+		<supports>Drazor Spell Gem 9</supports>
+		<description>
+			<p>Your Spell Gem gives you one additional 9th-level wizard spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wizard:spellcasting:slots:9" value="1" />
+		</rules>
+	</element>
+</elements>

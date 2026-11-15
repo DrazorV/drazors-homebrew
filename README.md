@@ -4,6 +4,8 @@ Homebrew content for Aurora and Borealis (D&D 5e, 2014 rules):
 
 - **Way of the Soul Sword** — Monk tradition
 - **Gromman** — race
+- **Renewal Charms** — one per class: an extra use of a limited class feature (Rage, Wild Shape, Action Surge, Ki, Channel Divinity, Pact Magic and more)
+- **Spell Gems** — an extra spell slot of a set level (1st to 9th) for the spellcasting class you choose
 - **Eldritch Beam** — Eldritch Invocation (by Rev)
 - **Spells** — Wildshard's Macabre Projection, Dethrone (by Rev, listed under the "Rev's Homebrew" source)
 - Magic weapons (all by Rev: Fang of the Dragon of Statues, Fatestealer, Klauth's Scalerender Glaive) and armor
