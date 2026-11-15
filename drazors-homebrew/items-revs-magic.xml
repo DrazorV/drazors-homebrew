@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: Magic Items</name>
-		<update version="1.1.0">
+		<update version="1.1.1">
 			<file name="items-revs-magic.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-magic.xml" />
 		</update>
 	</info>
@@ -88,7 +88,7 @@
 			<p><em>Potion, very rare</em></p>
 			<p>A vial of Percy's blood. When you drink it, you gain the following benefits for 1 hour.</p>
 			<ul>
-				<li><strong>Regeneration.</strong> At the start of each of your turns, you regain 2d10 hit points. If you start your turn in sunlight or running water, you instead take 2d10 damage.</li>
+				<li><strong>Regeneration.</strong> At the start of each of your turns, you regain 2d10 hit points. If you start your turn in sunlight or running water, you instead take 2d10 necrotic damage.</li>
 				<li><strong>Spider Climb.</strong> You can climb walls and walk along ceilings, and you have a climbing speed equal to your walking speed.</li>
 				<li><strong>Mist Step.</strong> You can cast <em>misty step</em> without expending a spell slot. You can do so up to three times during the potion's duration.</li>
 			</ul>
@@ -97,7 +97,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>For 1 hour: regain 2d10 HP at the start of each turn (take 2d10 damage instead in sunlight or running water); climb speed equal to walking speed, walk on walls and ceilings; misty step 3 times without a spell slot.</description>
+			<description>For 1 hour: regain 2d10 HP at the start of each turn (take 2d10 necrotic damage instead in sunlight or running water); climb speed equal to walking speed, walk on walls and ceilings; misty step 3 times without a spell slot.</description>
 		</sheet>
 		<setters>
 			<set name="category">Potions</set>
