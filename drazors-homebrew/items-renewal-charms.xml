@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Drazor's Homebrew: Renewal Charms and Spell Gems</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="items-renewal-charms.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-renewal-charms.xml" />
 		</update>
 	</info>
@@ -11,8 +11,8 @@
 
 	<element name="Renewal Charm (Rage)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_RAGE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a barbarian)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a barbarian)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Rage.</em></strong> Your number of Rage uses increases by 1.</p>
 		</description>
 		<sheet>
@@ -23,7 +23,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -34,8 +33,8 @@
 
 	<element name="Renewal Charm (Channel Divinity)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_CHANNEL_DIVINITY">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a cleric or paladin)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a cleric or paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Channel Divinity.</em></strong> You can use Channel Divinity one more time before it recharges.</p>
 		</description>
 		<sheet>
@@ -46,7 +45,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -57,8 +55,8 @@
 
 	<element name="Renewal Charm (Indomitable)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_INDOMITABLE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Indomitable.</em></strong> You can use Indomitable one more time before you finish a long rest.</p>
 		</description>
 		<sheet>
@@ -69,7 +67,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -80,8 +77,8 @@
 
 	<element name="Renewal Charm (Ki)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_KI">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a monk)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a monk)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Ki.</em></strong> Your ki point maximum increases by 2.</p>
 		</description>
 		<sheet>
@@ -92,7 +89,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -103,8 +99,8 @@
 
 	<element name="Renewal Charm (Divine Sense)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_DIVINE_SENSE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Divine Sense.</em></strong> You can use Divine Sense one more time before you finish a long rest.</p>
 		</description>
 		<sheet>
@@ -115,7 +111,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -126,8 +121,8 @@
 
 	<element name="Renewal Charm (Lay on Hands)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_LAY_ON_HANDS">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Lay on Hands.</em></strong> Your Lay on Hands pool of healing increases by 5 hit points.</p>
 		</description>
 		<sheet>
@@ -138,7 +133,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -149,8 +143,8 @@
 
 	<element name="Renewal Charm (Cleansing Touch)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_CLEANSING_TOUCH">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a paladin)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a paladin)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Cleansing Touch.</em></strong> You can use Cleansing Touch one more time before you finish a long rest.</p>
 		</description>
 		<sheet>
@@ -161,7 +155,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -172,8 +165,8 @@
 
 	<element name="Renewal Charm (Pact Magic)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_PACT_MAGIC">
 		<description>
-			<p><em>Wondrous item, rare (requires attunement by a warlock)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, rare (for a warlock)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Pact Magic.</em></strong> You gain one additional Pact Magic spell slot. It is the same level as your other Pact Magic slots and recharges with them.</p>
 		</description>
 		<sheet>
@@ -184,7 +177,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -195,8 +187,8 @@
 
 	<element name="Renewal Charm (Flash of Genius)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_FLASH_OF_GENIUS">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a artificer)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a artificer)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Flash of Genius.</em></strong> You can use Flash of Genius one more time before you finish a long rest.</p>
 		</description>
 		<sheet>
@@ -207,7 +199,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -220,8 +211,8 @@
 
 	<element name="Renewal Charm (Grit)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_GRIT">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a gunslinger)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a gunslinger)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Grit.</em></strong> You have 2 extra grit points, which you can spend like your others. They return when you finish a short or long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -233,7 +224,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -253,8 +243,8 @@
 
 	<element name="Renewal Charm (Bardic Inspiration)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_BARDIC_INSPIRATION">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a bard)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a bard)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Bardic Inspiration.</em></strong> You can give one additional Bardic Inspiration die. It recharges when you finish a long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -266,7 +256,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -286,8 +275,8 @@
 
 	<element name="Renewal Charm (Font of Magic)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SORCERY_POINTS">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a sorcerer)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a sorcerer)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Font of Magic.</em></strong> You have 2 extra sorcery points, which you can spend like your others. They return when you finish a long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -299,7 +288,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -319,8 +307,8 @@
 
 	<element name="Renewal Charm (Wild Shape)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_WILD_SHAPE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a druid)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a druid)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Wild Shape.</em></strong> You can use Wild Shape one additional time. It recharges when you finish a short or long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -332,7 +320,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -352,8 +339,8 @@
 
 	<element name="Renewal Charm (Second Wind)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_SECOND_WIND">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Second Wind.</em></strong> You can use Second Wind one additional time. It recharges when you finish a short or long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -365,7 +352,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -385,8 +371,8 @@
 
 	<element name="Renewal Charm (Action Surge)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ACTION_SURGE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a fighter)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a fighter)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Action Surge.</em></strong> You can use Action Surge one additional time, but still only once on the same turn. It recharges when you finish a short or long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -398,7 +384,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -418,8 +403,8 @@
 
 	<element name="Renewal Charm (Favored Foe)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_FAVORED_FOE">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a ranger)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a ranger)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Favored Foe.</em></strong> You can use Favored Foe one additional time. It recharges when you finish a long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -431,7 +416,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -451,8 +435,8 @@
 
 	<element name="Renewal Charm (Stroke of Luck)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_STROKE_OF_LUCK">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a rogue)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a rogue)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Stroke of Luck.</em></strong> You can use Stroke of Luck one additional time. It recharges when you finish a short or long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -464,7 +448,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -484,8 +467,8 @@
 
 	<element name="Renewal Charm (Mystic Arcanum)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_MYSTIC_ARCANUM">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a warlock)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a warlock)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Mystic Arcanum.</em></strong> You can cast one of your Mystic Arcanum spells one additional time without expending a spell slot. It recharges when you finish a long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -497,7 +480,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -517,8 +499,8 @@
 
 	<element name="Renewal Charm (Arcane Recovery)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_RENEWAL_CHARM_ARCANE_RECOVERY">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a wizard)</em></p>
-			<p class="indent">A small charm etched with a sigil of renewal. While you are attuned to it and have it equipped, you draw more from your training.</p>
+			<p><em>Wondrous item, uncommon (for a wizard)</em></p>
+			<p class="indent">A small charm etched with a sigil of renewal. While you have it equipped, you draw more from your training.</p>
 			<p class="indent"><strong><em>Arcane Recovery.</em></strong> You can use Arcane Recovery one additional time when you finish a short rest. It recharges when you finish a long rest.</p>
 			<p class="indent">The charm keeps its own count of these uses: spend them from the charm, not from the feature.</p>
 		</description>
@@ -530,7 +512,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -552,8 +533,8 @@
 
 	<element name="Spell Gem (1st Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_1">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 1st-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, uncommon (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 1st-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -564,7 +545,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -685,8 +665,8 @@
 
 	<element name="Spell Gem (2nd Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_2">
 		<description>
-			<p><em>Wondrous item, uncommon (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 2nd-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, uncommon (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 2nd-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -697,7 +677,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -818,8 +797,8 @@
 
 	<element name="Spell Gem (3rd Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_3">
 		<description>
-			<p><em>Wondrous item, rare (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 3rd-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, rare (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 3rd-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -830,7 +809,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -951,8 +929,8 @@
 
 	<element name="Spell Gem (4th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_4">
 		<description>
-			<p><em>Wondrous item, rare (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 4th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, rare (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 4th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -963,7 +941,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -1084,8 +1061,8 @@
 
 	<element name="Spell Gem (5th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_5">
 		<description>
-			<p><em>Wondrous item, very rare (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 5th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, very rare (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 5th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -1096,7 +1073,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -1195,8 +1171,8 @@
 
 	<element name="Spell Gem (6th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_6">
 		<description>
-			<p><em>Wondrous item, very rare (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 6th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, very rare (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 6th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -1207,7 +1183,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -1273,8 +1248,8 @@
 
 	<element name="Spell Gem (7th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_7">
 		<description>
-			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 7th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, legendary (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 7th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -1285,7 +1260,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -1351,8 +1325,8 @@
 
 	<element name="Spell Gem (8th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_8">
 		<description>
-			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 8th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, legendary (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 8th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -1363,7 +1337,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="slot">misc</set>
 		</setters>
@@ -1429,8 +1402,8 @@
 
 	<element name="Spell Gem (9th Level)" type="Magic Item" source="Drazor's Homebrew Content" id="ID_DRAZ_SPELL_GEM_9">
 		<description>
-			<p><em>Wondrous item, legendary (requires attunement by a spellcaster)</em></p>
-			<p class="indent">A faceted gem that hums with stored magic. While you are attuned to it and have it equipped, you gain one additional 9th-level spell slot. When you attune to the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
+			<p><em>Wondrous item, legendary (for a spellcaster)</em></p>
+			<p class="indent">A faceted gem that hums with stored magic. While you have it equipped, you gain one additional 9th-level spell slot. When you equip the gem, choose which of your spellcasting classes the slot belongs to; it recharges with that class's other slots.</p>
 			<p class="indent">Warlocks use a <em>Renewal Charm (Pact Magic)</em> instead.</p>
 		</description>
 		<sheet>
@@ -1441,7 +1414,6 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="slot">misc</set>
 		</setters>
