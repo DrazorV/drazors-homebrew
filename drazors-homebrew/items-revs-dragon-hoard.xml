@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rev's Homebrew: Dragon Hoard Items</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="items-revs-dragon-hoard.xml" url="https://raw.githubusercontent.com/DrazorV/drazors-homebrew/main/drazors-homebrew/items-revs-dragon-hoard.xml" />
 		</update>
 	</info>
@@ -199,6 +199,10 @@
 			<set name="rarity">Legendary</set>
 			<set name="slot">misc</set>
 		</setters>
+		<rules>
+			<!-- Rev's ruling: the attuned wizard always has Dethrone prepared (every stage). -->
+			<grant type="Spell" id="ID_DHC_SPELL_DETHRONE" spellcasting="Wizard" prepared="true" />
+		</rules>
 	</element>
 
 	<element name="Lost Secrets of Icingdeath (Stirring)" type="Magic Item" source="Rev's Homebrew" id="ID_REV_LOST_SECRETS_OF_ICINGDEATH_STIRRING">
@@ -226,6 +230,7 @@
 		</setters>
 		<rules>
 			<stat name="spellcasting:dc" value="1" />
+			<grant type="Spell" id="ID_DHC_SPELL_DETHRONE" spellcasting="Wizard" prepared="true" />
 		</rules>
 	</element>
 
@@ -263,6 +268,7 @@
 		</setters>
 		<rules>
 			<stat name="spellcasting:dc" value="2" />
+			<grant type="Spell" id="ID_DHC_SPELL_DETHRONE" spellcasting="Wizard" prepared="true" />
 			<select type="Class Feature" name="Lost Secrets of Icingdeath, Color" supports="Icingdeath Color" />
 		</rules>
 	</element>
